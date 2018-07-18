@@ -8,6 +8,8 @@ We differ from other pagination options as follows:
 * Pass only pagination context via `context`
 * Provide helpers for next / previous links
 
+## Example
+
 This plugin provides a very simple API which you use like so.
 
 First, the import:
