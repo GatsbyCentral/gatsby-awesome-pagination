@@ -8,6 +8,11 @@ We differ from other pagination options as follows:
 * Pass only pagination context via `context`
 * Provide helpers for next / previous links
 
+## Contents
+
+* [QuickStart](#quick-start)
+* [Philosophy](#philosophy)
+
 ## Quick start
 
 This plugin provides a very simple API which you use like so.
@@ -37,7 +42,7 @@ exports.createPages = ({ actions, graphql }) => {
 }
 ```
 
-Now in your component you can use the `pagination*` context like so:
+Now in your component you can use the pagination context like so:
 
 ```javascript
 export const pageQuery = graphql`
@@ -62,3 +67,20 @@ Your page's `context` automatically receives the following values:
 * `numberOfPages` - The total number of pages
 * `previousPagePath` - The path to the previous page or undefined
 * `nextPagePath` - The path to the next page or undefined
+
+## Philosophy
+
+Why did we create this plugin? We felt that the other Gatsby pagination plugins
+were using an approach that goes against the principles of GraphQL. One of the
+biggest advantages of GraphQL is to be able to decide what data you need right
+where you use that data. That's how Gatsby works with page queries.
+
+By putting all the data into `context`, the other pagination plugins break this.
+Now you need to decide what data you require for each page inside
+`gatsby-node.js` and not inside your page query.
+
+We also felt that there were some helpers missing. Generating links to the next
+and previous pages.
+
+This plugin aims to make it easy to paginate in Gatsby **properly**. No
+compromises.
