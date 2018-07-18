@@ -20,7 +20,7 @@ import { paginate } from 'gatsby-plugin-awesome-pagination';
 
 Then, use `paginate()` like so:
 
-```
+```javascript
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
 
