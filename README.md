@@ -41,11 +41,11 @@ Now in your component you can use the `pagination*` context like so:
 
 ```javascript
 export const pageQuery = graphql`
-  query ($paginationSkip: Int!, $paginationLimit: Int!) {
+  query ($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      skip: $paginationSkip,
-      limit: $paginationLimit
+      skip: $skip,
+      limit: $limit
     ) {
       ...
     }
