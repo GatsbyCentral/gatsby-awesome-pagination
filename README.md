@@ -44,7 +44,7 @@ export const pageQuery = graphql`
   query ($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      skip: $skip,
+      skip: $skip
       limit: $limit
     ) {
       ...
