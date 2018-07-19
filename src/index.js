@@ -75,6 +75,7 @@ export const createPagePerItem = (opts: CreatePagePerItemOpts): void => {
   times((index: number) => {
     const item = items[index];
     const path = getPath(item);
+    const id = getId(item);
 
     const previousItem = getPreviousItem(items, index);
     const previousPath = getPath(previousItem);
@@ -91,6 +92,7 @@ export const createPagePerItem = (opts: CreatePagePerItemOpts): void => {
       path,
       component,
       context: {
+        pageId: id,
         previousPagePath: previousPath,
         previousPageId: previousId,
         previousItem: previousItem,
