@@ -11,17 +11,17 @@ type CreatePage = ({}) => void;
 type PaginateOpts = {
   createPage: CreatePage,
   items: {}[],
-  perPage: number,
+  itemsPerPage: number,
   pathPrefix: string,
   component: string
 };
 export const paginate = (opts: PaginateOpts): void => {
-  const { createPage, items, perPage, pathPrefix, component } = opts;
+  const { createPage, items, itemsPerPage, pathPrefix, component } = opts;
 
   const totalItems = items.length;
 
   // How many page should we have?
-  const numberOfPages = Math.ceil(totalItems / perPage);
+  const numberOfPages = Math.ceil(totalItems / itemsPerPage);
 
   // Iterate as many times as we need pages
   times((pageNumber: number) => {
@@ -39,8 +39,8 @@ export const paginate = (opts: PaginateOpts): void => {
       context: {
         pageNumber,
         humanPageNumber: pageNumber + 1,
-        skip: perPage * pageNumber,
-        limit: perPage,
+        skip: itemsPerPage * pageNumber,
+        limit: itemsPerPage,
         numberOfPages,
         previousPagePath,
         nextPagePath

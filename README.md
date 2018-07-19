@@ -25,11 +25,11 @@ exports.createPages = ({ actions, graphql }) => {
 
   // Create your paginated pages like so
   paginate({
-    createPage,
-    items: blogPosts,
-    perPage: 10,
-    pathPrefix: '/posts',
-    component: '',
+    createPage, // The Gatsby `createPage` function
+    items: blogPosts, // An array of objects
+    itemsPerPage: 10, // How many items you want per page
+    pathPrefix: '/blog', // Creates pages like `/blog`, `/blog/2`, etc
+    component: path.resolve('...'), // Just like `createPage()`
   })
 }
 ```
@@ -104,7 +104,7 @@ Both `paginate()` and `createPagePerItem()` take a single argument, an object. T
 
 In addition to the arguments above, `paginate()` also accepts:
 
-* `perPage` - An integer, how many items should be displayed on each page
+* `itemsPerPage` - An integer, how many items should be displayed on each page
 * `pathPrefix` - A string, the path like `/blog`, to which `/2`, `/2`, etc will be added
 
 Example:
@@ -114,7 +114,7 @@ paginate({
   createPage: boundActionCreators.createPage,
   component: path.resolve('./src/templates/blog-index.js'),
   items: blogPosts,
-  perPage: 15,
+  itemsPerPage: 15,
   pathPrefix: '/blog'
 })
 ```
