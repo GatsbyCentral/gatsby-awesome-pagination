@@ -70,6 +70,11 @@ We differ from other pagination options as follows:
 * Pass only pagination context via `context`
 * Provide helpers for next / previous links
 
+There are 2 types of pagination. You have 80 blog posts and you want to show
+them 15 at a time on pages like `/blog`, `/blog/2`, `/blog/3`, etc. You do this
+with `paginate()`. Then on each blog post, you want to link to the previous and
+next blog posts. You do this with `createPagePerItem()`.
+
 ## Philosophy
 
 Why did we create this plugin? We felt that the other Gatsby pagination plugins
@@ -86,3 +91,54 @@ and previous pages.
 
 This plugin aims to make it easy to paginate in Gatsby **properly**. No
 compromises.
+
+## API
+
+Both `paginate()` and `createPagePerItem()` take a single argument, an object. They share the following keys:
+
+* `createPage` - The `createPage` function from `exports.createPages`
+* `component` - The value you would pass to `createPage()` as `component` [docs](https://www.gatsbyjs.org/docs/bound-action-creators/#createPage)
+* `items` - An array of objects, the items you want to paginate over
+
+### `paginate()`
+
+In addition to the arguments above, `paginate()` also accepts:
+
+* `perPage` - An integer, how many items should be displayed on each page
+* `pathPrefix` - A string, the path like `/blog`, to which `/2`, `/2`, etc will be added
+
+Example:
+
+```javascript
+paginate({
+  createPage: boundActionCreators.createPage,
+  component: path.resolve('./src/templates/blog-index.js'),
+  items: blogPosts,
+  perPage: 15,
+  pathPrefix: '/blog'
+})
+```
+
+### `createPagePerItem()`
+
+In addition to the arguments above, `createPagePerItem()` also accepts:
+
+* `itemToPath` - A function that takes one object from `items` and returns the
+  `path` for this `item`
+* `itemToId` - A function that takes one object from `items` and returns the
+  item's ID
+
+**NOTE**: Both `itemToPath` and `itemToId` also accept a string with the path to
+the value, for example `node.frontmatter.permalink` or `node.id`.
+
+Example:
+
+```javascript
+createPagePerItem({
+  createPage: boundActionCreators.createPage,
+  component: path.resolve('./src/templates/blog-post.js'),
+  items: blogPosts,
+  itemToPath: 'node.frontmatter.permalink',
+  itemToId: 'node.id'
+})
+```
