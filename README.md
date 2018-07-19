@@ -19,11 +19,10 @@ Then, use `paginate()` like so:
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
 
-  // Fetch your items (blog posts, categories, whatever).
-  // NOTE: Only fetch fields you need in `context`
+  // Fetch your items (blog posts, categories, etc).
   const blogPosts = doSomeMagic();
 
-  // Create your paginated pages like so
+  // Create your paginated pages
   paginate({
     createPage, // The Gatsby `createPage` function
     items: blogPosts, // An array of objects
@@ -34,7 +33,7 @@ exports.createPages = ({ actions, graphql }) => {
 }
 ```
 
-Now in your component you can use the pagination context like so:
+Now in your page query you can use the pagination context like so:
 
 ```javascript
 export const pageQuery = graphql`
@@ -49,6 +48,24 @@ export const pageQuery = graphql`
   }
 `
 ```
+
+Then inside your component, you can link to next / previous pages, and so on:
+
+```javascript
+const BlogIndex = (props) => {
+  return (
+    <div>
+      {data.allMarkdownRemark.edges.map(edge => <PostItem item={edge.node}/>)}
+      <div>
+        <Link to={props.pathContext.previousPageLink}>Previous</Link>
+        <Link to={props.pathContext.nextPageLink}>Next</Link>
+      </div>
+    </div>
+  )
+}
+```
+
+For a more detailed example, see [docs/examples.md](docs/examples.md)
 
 Your page's `context` automatically receives the following values:
 
