@@ -26,11 +26,19 @@ export const paginate = (opts: PaginateOpts): void => {
   // Iterate as many times as we need pages
   times((pageNumber: number) => {
     // Create the path for this page
-    const path = paginatedPath(pathPrefix, pageNumber);
+    const path = paginatedPath(pathPrefix, pageNumber, numberOfPages);
 
     // Calculate teh path for the previous page
-    const previousPagePath = paginatedPath(pathPrefix, pageNumber - 1);
-    const nextPagePath = paginatedPath(pathPrefix, pageNumber + 1);
+    const previousPagePath = paginatedPath(
+      pathPrefix,
+      pageNumber - 1,
+      numberOfPages
+    );
+    const nextPagePath = paginatedPath(
+      pathPrefix,
+      pageNumber + 1,
+      numberOfPages
+    );
 
     // Call `createPage()` for this paginated page
     createPage({
