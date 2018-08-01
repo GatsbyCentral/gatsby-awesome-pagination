@@ -40,8 +40,8 @@ export const pageQuery = graphql`
   query ($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      skip: $skip
-      limit: $limit
+      skip: $skip // This was added by the plugin
+      limit: $limit // This was added by the plugin
     ) {
       ...
     }
