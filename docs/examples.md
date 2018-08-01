@@ -44,7 +44,9 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         // Get an array of posts from the query result
         const posts = _.get(result, "data.allMarkdownRemark.edges");
 
-        // Create the blog index pages like `/blog`, `/blog/2`, `/blog/3`, etc
+        // Create the blog index pages like `/blog`, `/blog/2`, `/blog/3`, etc.
+        // Each page will have 10 blog posts and a link to the next and previous
+        // pages.
         paginate({
           createPage,
           items: blogPosts,
@@ -54,7 +56,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         });
 
         // Create one page per blog post, with a link to the previous and next
-        // blog posts
+        // blog posts.
         createPagePerItem({
           createPage,
           items: blogPosts,
