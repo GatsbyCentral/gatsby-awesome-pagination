@@ -4,7 +4,7 @@ Awesome Pagination for Gatsby
 ## Contents
 
 * [QuickStart](#quick-start)
-* [Intro](#intro)
+* [Introduction](#introduction)
 * [Philosophy](#philosophy)
 
 ## Quick start
@@ -78,7 +78,7 @@ Your page's `context` automatically receives the following values:
 * `previousPagePath` - The path to the previous page or `undefined`
 * `nextPagePath` - The path to the next page or `undefined`
 
-## Intro
+## Introduction
 
 Love Gatsby, wanna paginate. Sweet, that's exactly what this package is for.
 
