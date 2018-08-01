@@ -5,7 +5,7 @@
   "files": [
     "lib"
   ],
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "scripts": {
     "prepack": "npm run build",
     "build": "npm run prepack:babel && npm run prepack:flow",
