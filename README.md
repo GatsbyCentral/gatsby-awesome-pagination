@@ -149,6 +149,10 @@ In addition to the arguments above, `createPagePerItem()` also accepts:
 **NOTE**: Both `itemToPath` and `itemToId` also accept a string with the path to
 the value, for example `node.frontmatter.permalink` or `node.id`.
 
+**NOTE**: If an individual `item` has a property called `context`, and that
+property is an object, then it's own properties will be added to the page's
+`context` for that item.
+
 Example:
 
 ```javascript
