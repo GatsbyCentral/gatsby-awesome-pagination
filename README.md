@@ -1,6 +1,9 @@
 Awesome Pagination for Gatsby
 ---
 
+This plugin is under active development, all feedback / comments welcome via
+GitHub issues.
+
 ## Contents
 
 * [QuickStart](#quick-start)
