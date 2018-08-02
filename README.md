@@ -99,8 +99,8 @@ next blog posts. You do this with `createPagePerItem()`.
 
 Why did we create this plugin? We felt that the other Gatsby pagination plugins
 were using an approach that goes against the principles of GraphQL. One of the
-biggest advantages of GraphQL is to be able to decide what data you need right
-where you use that data. That's how Gatsby works with page queries.
+advantages of GraphQL is to be able to decide what data you need right where you
+use that data. That's how Gatsby works with page queries.
 
 By putting all the data into `context`, the other pagination plugins break this.
 Now you need to decide what data you require for each page inside
