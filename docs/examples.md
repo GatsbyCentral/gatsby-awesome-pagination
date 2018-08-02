@@ -16,8 +16,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     const blogPost = path.resolve("./src/templates/blog-post.js");
     const blogIndex = path.resolve("./src/templates/blog-index.js");
     resolve(
-      // NOTE: The `sort` and `filter` from this query must exactly match the
-      // query in `blog-index.js` to ensure that the skip parameter matches.
       graphql(
         `
           {
