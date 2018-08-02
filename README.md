@@ -139,6 +139,9 @@ paginate({
 
 ### `createPagePerItem()`
 
+WARNING: This API is under active development and will probably change. USE WITH
+CAUTION.
+
 In addition to the arguments above, `createPagePerItem()` also accepts:
 
 * `itemToPath`* - A function that takes one object from `items` and returns the
