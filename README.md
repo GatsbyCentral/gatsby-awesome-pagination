@@ -9,6 +9,8 @@ Awesome Pagination for Gatsby
 
 ## Quick start
 
+Open `gatsby-node.js` and import:
+
 ```javascript
 import { paginate } from 'gatsby-plugin-awesome-pagination';
 ```
