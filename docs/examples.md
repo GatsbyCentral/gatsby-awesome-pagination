@@ -129,16 +129,6 @@ export const pageQuery = graphql`
         title
       }
     }
-    previousPost: markdownRemark(id: { eq: $previousPageId }) {
-      frontmatter {
-        title
-      }
-    }
-    nextPost: markdownRemark(id: { eq: $nextPageId }) {
-      frontmatter {
-        title
-      }
-    }
   }
 `;
 ```
@@ -148,22 +138,22 @@ Then inside your component you can render links to the previous and next posts.
 ```javascript
 const BlogPost = props => {
   const { pathContext, data } = props;
-  const { previousPageLink, nextPageLink } = pathContext;
-  const { post, previousPost, nextPost } = data;
+  const { previousPagePath, nextPagePath, previousPageItem, nextPageItem } = pathContext;
+  const { post } = data;
 
   return (
     <div>
       <h1>{post.frontmatter.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
       <div>
-        {previousPageLink ? (
-          <Link to={pathContext.previousPageLink}>
-            {previousPost.frontmatter.title}
+        {previousPagePath ? (
+          <Link to={pathContext.previousPagePath}>
+            {previousPageItem.frontmatter.title}
           </Link>
         ) : null}
-        {nextPageLink ? (
-          <Link to={pathContext.nextPageLink}>
-            {nextPost.frontmatter.title}
+        {nextPagePath ? (
+          <Link to={pathContext.nextPagePath}>
+            {nextPageItem.frontmatter.title}
           </Link>
         ) : null}
       </div>

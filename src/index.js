@@ -65,7 +65,7 @@ type CreatePagePerItemOpts = {
   component: string
 };
 export const createPagePerItem = (opts: CreatePagePerItemOpts): void => {
-  const { createPage, items, itemToPath, component } = opts;
+  const { createPage, items, itemToPath, itemToId, component } = opts;
 
   // This produces a flow error because it is possible to return a `string` from
   // `itemToPath`. Flow does not know that we test for a `string` and in that
@@ -85,29 +85,29 @@ export const createPagePerItem = (opts: CreatePagePerItemOpts): void => {
     const path = getPath(item);
     const id = getId(item);
 
+    // NOTE: If there is no previous / next item, we set an empty string as the
+    // value for the next and previous path and ID. Gatsby ignores context
+    // values which are undefined, so we need these to exist.
     const previousItem = getPreviousItem(items, index);
-    const previousPath = getPath(previousItem);
-    const previousId = getId(previousItem);
+    const previousPath = getPath(previousItem) || "";
     const nextItem = getNextItem(items, index);
-    const nextPath = getPath(nextItem);
-    const nextId = getId(nextItem);
+    const nextPath = getPath(nextItem) || "";
 
-    // TODO Create the `context` for this page by adding pagination fields onto
-    // the `item`
+    // Does the item have a `context` field?
+    const itemContext = get("context")(item) || {};
+    const context = Object.assign({}, itemContext, {
+      pageId: id,
+      previousPagePath: previousPath,
+      previousItem: previousItem,
+      nextPagePath: nextPath,
+      nextItem: nextItem
+    });
 
     // Call `createPage()` for this item
     createPage({
       path,
       component,
-      context: {
-        pageId: id,
-        previousPagePath: previousPath,
-        previousPageId: previousId,
-        previousItem: previousItem,
-        nextPagePath: nextPath,
-        nextPageId: nextId,
-        nextItem: nextItem
-      }
+      context
     });
   })(items.length);
 };
