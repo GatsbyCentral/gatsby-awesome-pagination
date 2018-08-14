@@ -15,7 +15,7 @@ GitHub issues.
 Open `gatsby-node.js` and import:
 
 ```javascript
-import { paginate } from 'gatsby-plugin-awesome-pagination';
+import { paginate } from 'gatsby-awesome-pagination';
 ```
 
 Then, use `paginate()` like so:
