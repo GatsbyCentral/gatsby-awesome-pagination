@@ -3,7 +3,7 @@
 ## `gatsby-node.js`
 
 ```javascript
-import { paginate } from "gatsby-plugin-awesome-pagination";
+import { paginate } from "gatsby-awesome-pagination";
 ```
 
 ```javascript
