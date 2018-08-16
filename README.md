@@ -128,7 +128,7 @@ Both `paginate()` and `createPagePerItem()` take a single argument, an object. T
 In addition to the arguments above, `paginate()` also requires:
 
 * `itemsPerPage`* - An integer, how many items should be displayed on each page
-* `pathPrefix`* - A string, the path like `/blog`, to which `/2`, `/2`, etc will be added
+* `pathPrefix`* - A string, the path like `/blog`, to which `/2`, `/3`, etc will be added
 
 Example:
 
