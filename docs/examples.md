@@ -1,4 +1,4 @@
-## Exammples
+## Examples
 
 ## `gatsby-node.js`
 
@@ -102,14 +102,14 @@ Render posts like so:
 ```javascript
 const BlogIndex = props => {
   const { pathContext } = props;
-  const { previousPageLink, nextPageLink } = pathContext;
+  const { previousPagePath, nextPagePath } = pathContext;
 
   return (
     <div>
       {props.data.posts.edges.map(edge => <Item post={edge.node} />)}
       <div>
-        {previousPageLink ? <Link to={previousPageLink}>Previous</Link> : null}
-        {nextPageLink ? <Link to={nextPageLink}>Next</Link> : null}
+        {previousPagePath ? <Link to={previousPagePath}>Previous</Link> : null}
+        {nextPagePath ? <Link to={nextPagePath}>Next</Link> : null}
       </div>
     </div>
   );
