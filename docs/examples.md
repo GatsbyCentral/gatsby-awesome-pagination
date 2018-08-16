@@ -3,7 +3,7 @@
 ## `gatsby-node.js`
 
 ```javascript
-import { paginate } from "gatsby-awesome-pagination";
+import { paginate, createPagePerItem } from "gatsby-awesome-pagination";
 ```
 
 ```javascript
