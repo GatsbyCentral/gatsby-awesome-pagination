@@ -40,7 +40,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         }
 
         // Get an array of posts from the query result
-        const posts = _.get(result, "data.allMarkdownRemark.edges");
+        const blogPosts = _.get(result, "data.allMarkdownRemark.edges");
 
         // Create the blog index pages like `/blog`, `/blog/2`, `/blog/3`, etc.
         // Each page will have 10 blog posts and a link to the next and previous
