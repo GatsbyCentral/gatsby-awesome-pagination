@@ -3,6 +3,7 @@
 import isString from "lodash/fp/isString";
 import get from "lodash/fp/get";
 import times from "lodash/fp/times";
+import cloneDeep from "lodash/fp/cloneDeep";
 
 import { paginatedPath, getPreviousItem, getNextItem } from "./utils";
 
@@ -13,10 +14,18 @@ type PaginateOpts = {
   items: {}[],
   itemsPerPage: number,
   pathPrefix: string,
-  component: string
+  component: string,
+  context?: {}
 };
 export const paginate = (opts: PaginateOpts): void => {
-  const { createPage, items, itemsPerPage, pathPrefix, component } = opts;
+  const {
+    createPage,
+    items,
+    itemsPerPage,
+    pathPrefix,
+    component,
+    context
+  } = opts;
 
   const totalItems = items.length;
 
@@ -44,7 +53,9 @@ export const paginate = (opts: PaginateOpts): void => {
     createPage({
       path,
       component,
-      context: {
+      // Clone the passed `context` and extend our new pagination context values
+      // on top of it.
+      context: Object.assign(cloneDeep(context), {
         pageNumber,
         humanPageNumber: pageNumber + 1,
         skip: itemsPerPage * pageNumber,
@@ -52,7 +63,7 @@ export const paginate = (opts: PaginateOpts): void => {
         numberOfPages,
         previousPagePath,
         nextPagePath
-      }
+      })
     });
   })(numberOfPages);
 };
