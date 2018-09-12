@@ -117,7 +117,7 @@ compromises.
 
 ## API
 
-Both `paginate()` and `createPagePerItem()` take a single argument, an object. They share the following keys (* all are required):
+Both `paginate()` and `createPagePerItem()` take a single argument, an object. They share the following keys (* = required):
 
 * `createPage`* - The `createPage` function from `exports.createPages`
 * `component`* - The value you would pass to `createPage()` as `component` [Gatsby docs here](https://www.gatsbyjs.org/docs/bound-action-creators/#createPage)
