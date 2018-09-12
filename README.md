@@ -129,6 +129,7 @@ In addition to the arguments above, `paginate()` also requires:
 
 * `itemsPerPage`* - An integer, how many items should be displayed on each page
 * `pathPrefix`* - A string, the path like `/blog`, to which `/2`, `/3`, etc will be added
+* `context` - A base context object which is extended with the pagination context values
 
 Example:
 
