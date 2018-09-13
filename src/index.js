@@ -55,7 +55,7 @@ export const paginate = (opts: PaginateOpts): void => {
       component,
       // Clone the passed `context` and extend our new pagination context values
       // on top of it.
-      context: Object.assign(cloneDeep(context), {
+      context: Object.assign({}, cloneDeep(context), {
         pageNumber,
         humanPageNumber: pageNumber + 1,
         skip: itemsPerPage * pageNumber,
