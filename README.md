@@ -173,3 +173,12 @@ createPagePerItem({
   itemToId: 'node.id'
 })
 ```
+
+## Flow
+
+This plugin is written using [flow](https://flow.org/). There are some
+limitations when using flow and [lodash](https://lodash.com/). Specifically
+[this issue](https://github.com/facebook/flow/issues/34). In many cases we use
+`$FlowExpectError` and explicitly define the type of something to workaround. A
+more elegant solution does not currently seem to exist. Any input on improving
+the typing is greatly appreciated in the plugin's issues.
