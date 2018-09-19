@@ -37,7 +37,7 @@ export const paginate = (opts: PaginateOpts): void => {
     // Create the path for this page
     const path = paginatedPath(pathPrefix, pageNumber, numberOfPages);
 
-    // Calculate teh path for the previous page
+    // Calculate the path for the previous page
     const previousPagePath = paginatedPath(
       pathPrefix,
       pageNumber - 1,
@@ -78,13 +78,11 @@ type CreatePagePerItemOpts = {
 export const createPagePerItem = (opts: CreatePagePerItemOpts): void => {
   const { createPage, items, itemToPath, itemToId, component } = opts;
 
-  // This produces a flow error because it is possible to return a `string` from
-  // `itemToPath`. Flow does not know that we test for a `string` and in that
-  // case, return a function. $FlowExpectError
+  // $FlowExpectError
   const getPath: ({}) => string = isString(itemToPath)
     ? get(itemToPath)
     : itemToPath;
-  // Same as above. $FlowExpectError
+  // $FlowExpectError
   const getId: ({}) => string = isString(itemToId) ? get(itemToId) : itemToId;
 
   // We cannot use `forEach()` here because in the FP version of lodash, the
