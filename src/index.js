@@ -4,6 +4,7 @@ import isString from "lodash/fp/isString";
 import get from "lodash/fp/get";
 import times from "lodash/fp/times";
 import cloneDeep from "lodash/fp/cloneDeep";
+import isInteger from "lodash/fp/isInteger";
 
 import { paginatedPath, getPreviousItem, getNextItem } from "./utils";
 
@@ -13,6 +14,7 @@ type PaginateOpts = {
   createPage: CreatePage,
   items: {}[],
   itemsPerPage: number,
+  itemsPerFirstPage?: number,
   pathPrefix: string,
   component: string,
   context?: {}
@@ -22,15 +24,26 @@ export const paginate = (opts: PaginateOpts): void => {
     createPage,
     items,
     itemsPerPage,
+    itemsPerFirstPage,
     pathPrefix,
     component,
     context
   } = opts;
 
+  // How many items do we have in total? We use `items.length` here. In fact, we
+  // could just accept an integer in the API as the actual contents of `items`
+  // is never used.
   const totalItems = items.length;
+  // If `itemsPerFirstPage` is specified, use that value for the first page,
+  // otherwise use `itemsPerPage`.
+  // $FlowExpectError
+  const firstPageCount: number = isInteger(itemsPerFirstPage)
+    ? itemsPerFirstPage
+    : itemsPerPage;
 
   // How many page should we have?
-  const numberOfPages = Math.ceil(totalItems / itemsPerPage);
+  const numberOfPages =
+    Math.ceil((totalItems - firstPageCount) / itemsPerPage) + 1;
 
   // Iterate as many times as we need pages
   times((pageNumber: number) => {
@@ -59,7 +72,8 @@ export const paginate = (opts: PaginateOpts): void => {
         pageNumber,
         humanPageNumber: pageNumber + 1,
         skip: itemsPerPage * pageNumber,
-        limit: itemsPerPage,
+        // Limit may be different on the first page
+        limit: pageNumber === 0 ? firstPageCount : itemsPerPage,
         numberOfPages,
         previousPagePath,
         nextPagePath
