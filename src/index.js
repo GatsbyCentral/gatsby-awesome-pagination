@@ -74,7 +74,15 @@ export const paginate = (opts: PaginateOpts): void => {
       context: Object.assign({}, cloneDeep(context), {
         pageNumber,
         humanPageNumber: pageNumber + 1,
-        skip: itemsPerPage * pageNumber,
+        skip:
+          // On the first page (`pageNumber` = 0) skip 0 posts
+          pageNumber === 0
+            ? 0
+            : pageNumber === 1
+              ? // On the second page (`pageNumber` = 1)
+                firstPageCount
+              : // On all other pages,
+                firstPageCount + itemsPerPage * (pageNumber - 1),
         // Limit may be different on the first page
         limit: pageNumber === 0 ? firstPageCount : itemsPerPage,
         numberOfPages,
