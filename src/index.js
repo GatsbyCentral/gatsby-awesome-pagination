@@ -53,7 +53,7 @@ export const paginate = (opts: PaginateOpts): void => {
     // Create the path for this page
     const path = paginatedPath(pathPrefix, pageNumber, numberOfPages);
 
-    // Calculate the path for the previous page
+    // Calculate the path for the previous and next pages
     const previousPagePath = paginatedPath(
       pathPrefix,
       pageNumber - 1,
