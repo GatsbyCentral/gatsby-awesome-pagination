@@ -6,7 +6,12 @@ import times from "lodash/fp/times";
 import cloneDeep from "lodash/fp/cloneDeep";
 import isInteger from "lodash/fp/isInteger";
 
-import { paginatedPath, getPreviousItem, getNextItem } from "./utils";
+import {
+  paginatedPath,
+  getPreviousItem,
+  getNextItem,
+  calculateSkip
+} from "./utils";
 
 type CreatePage = ({}) => void;
 
@@ -74,16 +79,7 @@ export const paginate = (opts: PaginateOpts): void => {
       context: Object.assign({}, cloneDeep(context), {
         pageNumber,
         humanPageNumber: pageNumber + 1,
-        skip:
-          // On the first page (`pageNumber` = 0) skip 0 posts
-          pageNumber === 0
-            ? 0
-            : pageNumber === 1
-              ? // On the second page (`pageNumber` = 1)
-                firstPageCount
-              : // On all other pages,
-                firstPageCount + itemsPerPage * (pageNumber - 1),
-        // Limit may be different on the first page
+        skip: calculateSkip(pageNumber, firstPageCount, itemsPerPage),
         limit: pageNumber === 0 ? firstPageCount : itemsPerPage,
         numberOfPages,
         previousPagePath,

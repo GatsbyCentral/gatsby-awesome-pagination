@@ -51,3 +51,17 @@ export const paginatedPath = (
   // zero indexed, but for human consuption, we want 1 indexed numbers.
   return `${pathPrefix}/${pageNumber + 1}`;
 };
+
+export const calculateSkip = (
+  pageNumber: number,
+  firstPageCount: number,
+  itemsPerPage: number
+): number => {
+  if (pageNumber === 0) {
+    return 0;
+  } else if (pageNumber === 1) {
+    return firstPageCount;
+  } else {
+    return firstPageCount + itemsPerPage * (pageNumber - 1);
+  }
+};
