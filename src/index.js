@@ -44,6 +44,7 @@ export const paginate = (opts: PaginateOpts): void => {
   // How many page should we have?
   const numberOfPages =
     Math.ceil((totalItems - firstPageCount) / itemsPerPage) + 1;
+  // NOTE This assumes we have at least 2 pages. :-(
 
   // Iterate as many times as we need pages
   times((pageNumber: number) => {
