@@ -117,7 +117,8 @@ compromises.
 
 ## API
 
-Both `paginate()` and `createPagePerItem()` take a single argument, an object. They share the following keys (* = required):
+Both `paginate()` and `createPagePerItem()` take a single argument, an object.
+They share the following keys (* = required):
 
 * `createPage`* - The `createPage` function from `exports.createPages`
 * `component`* - The value you would pass to `createPage()` as `component` [Gatsby docs here](https://www.gatsbyjs.org/docs/bound-action-creators/#createPage)
@@ -125,9 +126,10 @@ Both `paginate()` and `createPagePerItem()` take a single argument, an object. T
 
 ### `paginate()`
 
-In addition to the arguments above, `paginate()` also requires:
+In addition to the arguments above, `paginate()` also supports:
 
 * `itemsPerPage`* - An integer, how many items should be displayed on each page
+* `itemsPerFirstPage` - An integer, how many items should be displayed on the **first** page
 * `pathPrefix`* - A string, the path like `/blog`, to which `/2`, `/3`, etc will be added
 * `context` - A base context object which is extended with the pagination context values
 
@@ -139,6 +141,7 @@ paginate({
   component: path.resolve('./src/templates/blog-index.js'),
   items: blogPosts,
   itemsPerPage: 15,
+  itemsPerPage: 3,
   pathPrefix: '/blog'
 })
 ```
