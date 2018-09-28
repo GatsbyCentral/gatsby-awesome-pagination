@@ -49,7 +49,9 @@ export const paginatedPath = (
 
   // Othewrise, add a slash and the number + 1. We add 1 because `pageNumber` is
   // zero indexed, but for human consuption, we want 1 indexed numbers.
-  return `${pathPrefix}/${pageNumber + 1}`;
+  return `${pathPrefix !== "/" ? pathPrefix : ""}/${pageNumber + 1}`;
+  // NOTE: If `pathPrefix` is a single slash (the index page) then we do not
+  // want to output two slashes, so we omit it.
 };
 
 export const calculateSkip = (
