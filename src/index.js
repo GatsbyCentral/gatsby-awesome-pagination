@@ -13,6 +13,8 @@ import {
   calculateSkip
 } from "./utils";
 
+import type { PathPrefix } from './utils'
+
 type CreatePage = ({}) => void;
 
 type PaginateOpts = {
@@ -20,7 +22,7 @@ type PaginateOpts = {
   items: {}[],
   itemsPerPage: number,
   itemsPerFirstPage?: number,
-  pathPrefix: string,
+  pathPrefix: PathPrefix,
   component: string,
   context?: {}
 };
