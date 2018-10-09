@@ -25,16 +25,16 @@ export const getNextItem = (items: {}[], index: number): ReturnedItem => {
   return get(`[${index + 1}]`, items);
 };
 
-export const paginatedPath = (
-  pathPrefix: string,
+export type PathPrefix = string | ({
   pageNumber: number,
-  numberOfPages: number
-): string => {
-  // If this is page 0, return only the pathPrefix
-  if (pageNumber === 0) {
-    return pathPrefix;
-  }
+  numberOfPages: number,
+}) => string;
 
+export const paginatedPath = (
+  pathPrefix: PathPrefix,
+  pageNumber: number,
+  numberOfPages: number,
+): string => {
   // If this page is less than zero (-1 for example), then it  it does not
   // exist, return an empty string.
   if (pageNumber < 0) {
@@ -47,9 +47,18 @@ export const paginatedPath = (
     return "";
   }
 
+  const computedPathPrefix = typeof pathPrefix === "function"
+    ? pathPrefix({ pageNumber, numberOfPages })
+    : pathPrefix;
+
+  // If this is page 0, return only the pathPrefix
+  if (pageNumber === 0) {
+    return computedPathPrefix;
+  }
+
   // Othewrise, add a slash and the number + 1. We add 1 because `pageNumber` is
   // zero indexed, but for human consuption, we want 1 indexed numbers.
-  return `${pathPrefix !== "/" ? pathPrefix : ""}/${pageNumber + 1}`;
+  return `${computedPathPrefix !== "/" ? computedPathPrefix : ""}/${pageNumber + 1}`;
   // NOTE: If `pathPrefix` is a single slash (the index page) then we do not
   // want to output two slashes, so we omit it.
 };
