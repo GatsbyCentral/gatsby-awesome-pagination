@@ -141,7 +141,7 @@ paginate({
   component: path.resolve('./src/templates/blog-index.js'),
   items: blogPosts,
   itemsPerPage: 15,
-  itemsPerPage: 3,
+  itemsPerFirstPage: 3,
   pathPrefix: '/blog'
 })
 ```
