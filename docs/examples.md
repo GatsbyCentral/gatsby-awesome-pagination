@@ -43,13 +43,14 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         const blogPosts = _.get(result, "data.allMarkdownRemark.edges");
 
         // Create the blog index pages like `/blog`, `/blog/2`, `/blog/3`, etc.
-        // Each page will have 10 blog posts and a link to the next and previous
-        // pages.
+        // The first page will have 3 items and each following page will have 10
+        // blog posts and a link to the next and previous pages.
         paginate({
           createPage,
           items: blogPosts,
           component: blogIndex,
           perPage: 10,
+          itemsPerFirstPage: 3,
           pathPrefix: "/blog"
         });
 
