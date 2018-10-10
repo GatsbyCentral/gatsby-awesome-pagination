@@ -1,5 +1,3233 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`createPagePerItem Calls createPage() with the correct params 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 1,
+            "path": "/blog/post-2",
+            "title": "Post number 1",
+          },
+          "nextPagePath": "/blog/post-2",
+          "pageId": 0,
+          "previousItem": undefined,
+          "previousPagePath": "",
+        },
+        "path": "/blog/post-1",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 2,
+            "path": "/blog/post-3",
+            "title": "Post number 2",
+          },
+          "nextPagePath": "/blog/post-3",
+          "pageId": 1,
+          "previousItem": Object {
+            "id": 0,
+            "path": "/blog/post-1",
+            "title": "Post number 0",
+          },
+          "previousPagePath": "/blog/post-1",
+        },
+        "path": "/blog/post-2",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 3,
+            "path": "/blog/post-4",
+            "title": "Post number 3",
+          },
+          "nextPagePath": "/blog/post-4",
+          "pageId": 2,
+          "previousItem": Object {
+            "id": 1,
+            "path": "/blog/post-2",
+            "title": "Post number 1",
+          },
+          "previousPagePath": "/blog/post-2",
+        },
+        "path": "/blog/post-3",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 4,
+            "path": "/blog/post-5",
+            "title": "Post number 4",
+          },
+          "nextPagePath": "/blog/post-5",
+          "pageId": 3,
+          "previousItem": Object {
+            "id": 2,
+            "path": "/blog/post-3",
+            "title": "Post number 2",
+          },
+          "previousPagePath": "/blog/post-3",
+        },
+        "path": "/blog/post-4",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 5,
+            "path": "/blog/post-6",
+            "title": "Post number 5",
+          },
+          "nextPagePath": "/blog/post-6",
+          "pageId": 4,
+          "previousItem": Object {
+            "id": 3,
+            "path": "/blog/post-4",
+            "title": "Post number 3",
+          },
+          "previousPagePath": "/blog/post-4",
+        },
+        "path": "/blog/post-5",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 6,
+            "path": "/blog/post-7",
+            "title": "Post number 6",
+          },
+          "nextPagePath": "/blog/post-7",
+          "pageId": 5,
+          "previousItem": Object {
+            "id": 4,
+            "path": "/blog/post-5",
+            "title": "Post number 4",
+          },
+          "previousPagePath": "/blog/post-5",
+        },
+        "path": "/blog/post-6",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 7,
+            "path": "/blog/post-8",
+            "title": "Post number 7",
+          },
+          "nextPagePath": "/blog/post-8",
+          "pageId": 6,
+          "previousItem": Object {
+            "id": 5,
+            "path": "/blog/post-6",
+            "title": "Post number 5",
+          },
+          "previousPagePath": "/blog/post-6",
+        },
+        "path": "/blog/post-7",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 8,
+            "path": "/blog/post-9",
+            "title": "Post number 8",
+          },
+          "nextPagePath": "/blog/post-9",
+          "pageId": 7,
+          "previousItem": Object {
+            "id": 6,
+            "path": "/blog/post-7",
+            "title": "Post number 6",
+          },
+          "previousPagePath": "/blog/post-7",
+        },
+        "path": "/blog/post-8",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 9,
+            "path": "/blog/post-10",
+            "title": "Post number 9",
+          },
+          "nextPagePath": "/blog/post-10",
+          "pageId": 8,
+          "previousItem": Object {
+            "id": 7,
+            "path": "/blog/post-8",
+            "title": "Post number 7",
+          },
+          "previousPagePath": "/blog/post-8",
+        },
+        "path": "/blog/post-9",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 10,
+            "path": "/blog/post-11",
+            "title": "Post number 10",
+          },
+          "nextPagePath": "/blog/post-11",
+          "pageId": 9,
+          "previousItem": Object {
+            "id": 8,
+            "path": "/blog/post-9",
+            "title": "Post number 8",
+          },
+          "previousPagePath": "/blog/post-9",
+        },
+        "path": "/blog/post-10",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 11,
+            "path": "/blog/post-12",
+            "title": "Post number 11",
+          },
+          "nextPagePath": "/blog/post-12",
+          "pageId": 10,
+          "previousItem": Object {
+            "id": 9,
+            "path": "/blog/post-10",
+            "title": "Post number 9",
+          },
+          "previousPagePath": "/blog/post-10",
+        },
+        "path": "/blog/post-11",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 12,
+            "path": "/blog/post-13",
+            "title": "Post number 12",
+          },
+          "nextPagePath": "/blog/post-13",
+          "pageId": 11,
+          "previousItem": Object {
+            "id": 10,
+            "path": "/blog/post-11",
+            "title": "Post number 10",
+          },
+          "previousPagePath": "/blog/post-11",
+        },
+        "path": "/blog/post-12",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 13,
+            "path": "/blog/post-14",
+            "title": "Post number 13",
+          },
+          "nextPagePath": "/blog/post-14",
+          "pageId": 12,
+          "previousItem": Object {
+            "id": 11,
+            "path": "/blog/post-12",
+            "title": "Post number 11",
+          },
+          "previousPagePath": "/blog/post-12",
+        },
+        "path": "/blog/post-13",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 14,
+            "path": "/blog/post-15",
+            "title": "Post number 14",
+          },
+          "nextPagePath": "/blog/post-15",
+          "pageId": 13,
+          "previousItem": Object {
+            "id": 12,
+            "path": "/blog/post-13",
+            "title": "Post number 12",
+          },
+          "previousPagePath": "/blog/post-13",
+        },
+        "path": "/blog/post-14",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 15,
+            "path": "/blog/post-16",
+            "title": "Post number 15",
+          },
+          "nextPagePath": "/blog/post-16",
+          "pageId": 14,
+          "previousItem": Object {
+            "id": 13,
+            "path": "/blog/post-14",
+            "title": "Post number 13",
+          },
+          "previousPagePath": "/blog/post-14",
+        },
+        "path": "/blog/post-15",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 16,
+            "path": "/blog/post-17",
+            "title": "Post number 16",
+          },
+          "nextPagePath": "/blog/post-17",
+          "pageId": 15,
+          "previousItem": Object {
+            "id": 14,
+            "path": "/blog/post-15",
+            "title": "Post number 14",
+          },
+          "previousPagePath": "/blog/post-15",
+        },
+        "path": "/blog/post-16",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 17,
+            "path": "/blog/post-18",
+            "title": "Post number 17",
+          },
+          "nextPagePath": "/blog/post-18",
+          "pageId": 16,
+          "previousItem": Object {
+            "id": 15,
+            "path": "/blog/post-16",
+            "title": "Post number 15",
+          },
+          "previousPagePath": "/blog/post-16",
+        },
+        "path": "/blog/post-17",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 18,
+            "path": "/blog/post-19",
+            "title": "Post number 18",
+          },
+          "nextPagePath": "/blog/post-19",
+          "pageId": 17,
+          "previousItem": Object {
+            "id": 16,
+            "path": "/blog/post-17",
+            "title": "Post number 16",
+          },
+          "previousPagePath": "/blog/post-17",
+        },
+        "path": "/blog/post-18",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 19,
+            "path": "/blog/post-20",
+            "title": "Post number 19",
+          },
+          "nextPagePath": "/blog/post-20",
+          "pageId": 18,
+          "previousItem": Object {
+            "id": 17,
+            "path": "/blog/post-18",
+            "title": "Post number 17",
+          },
+          "previousPagePath": "/blog/post-18",
+        },
+        "path": "/blog/post-19",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 20,
+            "path": "/blog/post-21",
+            "title": "Post number 20",
+          },
+          "nextPagePath": "/blog/post-21",
+          "pageId": 19,
+          "previousItem": Object {
+            "id": 18,
+            "path": "/blog/post-19",
+            "title": "Post number 18",
+          },
+          "previousPagePath": "/blog/post-19",
+        },
+        "path": "/blog/post-20",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 21,
+            "path": "/blog/post-22",
+            "title": "Post number 21",
+          },
+          "nextPagePath": "/blog/post-22",
+          "pageId": 20,
+          "previousItem": Object {
+            "id": 19,
+            "path": "/blog/post-20",
+            "title": "Post number 19",
+          },
+          "previousPagePath": "/blog/post-20",
+        },
+        "path": "/blog/post-21",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 22,
+            "path": "/blog/post-23",
+            "title": "Post number 22",
+          },
+          "nextPagePath": "/blog/post-23",
+          "pageId": 21,
+          "previousItem": Object {
+            "id": 20,
+            "path": "/blog/post-21",
+            "title": "Post number 20",
+          },
+          "previousPagePath": "/blog/post-21",
+        },
+        "path": "/blog/post-22",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 23,
+            "path": "/blog/post-24",
+            "title": "Post number 23",
+          },
+          "nextPagePath": "/blog/post-24",
+          "pageId": 22,
+          "previousItem": Object {
+            "id": 21,
+            "path": "/blog/post-22",
+            "title": "Post number 21",
+          },
+          "previousPagePath": "/blog/post-22",
+        },
+        "path": "/blog/post-23",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 24,
+            "path": "/blog/post-25",
+            "title": "Post number 24",
+          },
+          "nextPagePath": "/blog/post-25",
+          "pageId": 23,
+          "previousItem": Object {
+            "id": 22,
+            "path": "/blog/post-23",
+            "title": "Post number 22",
+          },
+          "previousPagePath": "/blog/post-23",
+        },
+        "path": "/blog/post-24",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 25,
+            "path": "/blog/post-26",
+            "title": "Post number 25",
+          },
+          "nextPagePath": "/blog/post-26",
+          "pageId": 24,
+          "previousItem": Object {
+            "id": 23,
+            "path": "/blog/post-24",
+            "title": "Post number 23",
+          },
+          "previousPagePath": "/blog/post-24",
+        },
+        "path": "/blog/post-25",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 26,
+            "path": "/blog/post-27",
+            "title": "Post number 26",
+          },
+          "nextPagePath": "/blog/post-27",
+          "pageId": 25,
+          "previousItem": Object {
+            "id": 24,
+            "path": "/blog/post-25",
+            "title": "Post number 24",
+          },
+          "previousPagePath": "/blog/post-25",
+        },
+        "path": "/blog/post-26",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 27,
+            "path": "/blog/post-28",
+            "title": "Post number 27",
+          },
+          "nextPagePath": "/blog/post-28",
+          "pageId": 26,
+          "previousItem": Object {
+            "id": 25,
+            "path": "/blog/post-26",
+            "title": "Post number 25",
+          },
+          "previousPagePath": "/blog/post-26",
+        },
+        "path": "/blog/post-27",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 28,
+            "path": "/blog/post-29",
+            "title": "Post number 28",
+          },
+          "nextPagePath": "/blog/post-29",
+          "pageId": 27,
+          "previousItem": Object {
+            "id": 26,
+            "path": "/blog/post-27",
+            "title": "Post number 26",
+          },
+          "previousPagePath": "/blog/post-27",
+        },
+        "path": "/blog/post-28",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 29,
+            "path": "/blog/post-30",
+            "title": "Post number 29",
+          },
+          "nextPagePath": "/blog/post-30",
+          "pageId": 28,
+          "previousItem": Object {
+            "id": 27,
+            "path": "/blog/post-28",
+            "title": "Post number 27",
+          },
+          "previousPagePath": "/blog/post-28",
+        },
+        "path": "/blog/post-29",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 30,
+            "path": "/blog/post-31",
+            "title": "Post number 30",
+          },
+          "nextPagePath": "/blog/post-31",
+          "pageId": 29,
+          "previousItem": Object {
+            "id": 28,
+            "path": "/blog/post-29",
+            "title": "Post number 28",
+          },
+          "previousPagePath": "/blog/post-29",
+        },
+        "path": "/blog/post-30",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 31,
+            "path": "/blog/post-32",
+            "title": "Post number 31",
+          },
+          "nextPagePath": "/blog/post-32",
+          "pageId": 30,
+          "previousItem": Object {
+            "id": 29,
+            "path": "/blog/post-30",
+            "title": "Post number 29",
+          },
+          "previousPagePath": "/blog/post-30",
+        },
+        "path": "/blog/post-31",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 32,
+            "path": "/blog/post-33",
+            "title": "Post number 32",
+          },
+          "nextPagePath": "/blog/post-33",
+          "pageId": 31,
+          "previousItem": Object {
+            "id": 30,
+            "path": "/blog/post-31",
+            "title": "Post number 30",
+          },
+          "previousPagePath": "/blog/post-31",
+        },
+        "path": "/blog/post-32",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 33,
+            "path": "/blog/post-34",
+            "title": "Post number 33",
+          },
+          "nextPagePath": "/blog/post-34",
+          "pageId": 32,
+          "previousItem": Object {
+            "id": 31,
+            "path": "/blog/post-32",
+            "title": "Post number 31",
+          },
+          "previousPagePath": "/blog/post-32",
+        },
+        "path": "/blog/post-33",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 34,
+            "path": "/blog/post-35",
+            "title": "Post number 34",
+          },
+          "nextPagePath": "/blog/post-35",
+          "pageId": 33,
+          "previousItem": Object {
+            "id": 32,
+            "path": "/blog/post-33",
+            "title": "Post number 32",
+          },
+          "previousPagePath": "/blog/post-33",
+        },
+        "path": "/blog/post-34",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 35,
+            "path": "/blog/post-36",
+            "title": "Post number 35",
+          },
+          "nextPagePath": "/blog/post-36",
+          "pageId": 34,
+          "previousItem": Object {
+            "id": 33,
+            "path": "/blog/post-34",
+            "title": "Post number 33",
+          },
+          "previousPagePath": "/blog/post-34",
+        },
+        "path": "/blog/post-35",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 36,
+            "path": "/blog/post-37",
+            "title": "Post number 36",
+          },
+          "nextPagePath": "/blog/post-37",
+          "pageId": 35,
+          "previousItem": Object {
+            "id": 34,
+            "path": "/blog/post-35",
+            "title": "Post number 34",
+          },
+          "previousPagePath": "/blog/post-35",
+        },
+        "path": "/blog/post-36",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 37,
+            "path": "/blog/post-38",
+            "title": "Post number 37",
+          },
+          "nextPagePath": "/blog/post-38",
+          "pageId": 36,
+          "previousItem": Object {
+            "id": 35,
+            "path": "/blog/post-36",
+            "title": "Post number 35",
+          },
+          "previousPagePath": "/blog/post-36",
+        },
+        "path": "/blog/post-37",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 38,
+            "path": "/blog/post-39",
+            "title": "Post number 38",
+          },
+          "nextPagePath": "/blog/post-39",
+          "pageId": 37,
+          "previousItem": Object {
+            "id": 36,
+            "path": "/blog/post-37",
+            "title": "Post number 36",
+          },
+          "previousPagePath": "/blog/post-37",
+        },
+        "path": "/blog/post-38",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 39,
+            "path": "/blog/post-40",
+            "title": "Post number 39",
+          },
+          "nextPagePath": "/blog/post-40",
+          "pageId": 38,
+          "previousItem": Object {
+            "id": 37,
+            "path": "/blog/post-38",
+            "title": "Post number 37",
+          },
+          "previousPagePath": "/blog/post-38",
+        },
+        "path": "/blog/post-39",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 40,
+            "path": "/blog/post-41",
+            "title": "Post number 40",
+          },
+          "nextPagePath": "/blog/post-41",
+          "pageId": 39,
+          "previousItem": Object {
+            "id": 38,
+            "path": "/blog/post-39",
+            "title": "Post number 38",
+          },
+          "previousPagePath": "/blog/post-39",
+        },
+        "path": "/blog/post-40",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 41,
+            "path": "/blog/post-42",
+            "title": "Post number 41",
+          },
+          "nextPagePath": "/blog/post-42",
+          "pageId": 40,
+          "previousItem": Object {
+            "id": 39,
+            "path": "/blog/post-40",
+            "title": "Post number 39",
+          },
+          "previousPagePath": "/blog/post-40",
+        },
+        "path": "/blog/post-41",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 42,
+            "path": "/blog/post-43",
+            "title": "Post number 42",
+          },
+          "nextPagePath": "/blog/post-43",
+          "pageId": 41,
+          "previousItem": Object {
+            "id": 40,
+            "path": "/blog/post-41",
+            "title": "Post number 40",
+          },
+          "previousPagePath": "/blog/post-41",
+        },
+        "path": "/blog/post-42",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": undefined,
+          "nextPagePath": "",
+          "pageId": 42,
+          "previousItem": Object {
+            "id": 41,
+            "path": "/blog/post-42",
+            "title": "Post number 41",
+          },
+          "previousPagePath": "/blog/post-42",
+        },
+        "path": "/blog/post-43",
+      },
+    ],
+  ],
+  "results": Array [
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+  ],
+}
+`;
+
+exports[`createPagePerItem Calls createPage() with the correct path 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 1,
+            "path": "/blog/post-2",
+            "title": "Post number 1",
+          },
+          "nextPagePath": "/blog/post-2",
+          "pageId": 0,
+          "previousItem": undefined,
+          "previousPagePath": "",
+        },
+        "path": "/blog/post-1",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 2,
+            "path": "/blog/post-3",
+            "title": "Post number 2",
+          },
+          "nextPagePath": "/blog/post-3",
+          "pageId": 1,
+          "previousItem": Object {
+            "id": 0,
+            "path": "/blog/post-1",
+            "title": "Post number 0",
+          },
+          "previousPagePath": "/blog/post-1",
+        },
+        "path": "/blog/post-2",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 3,
+            "path": "/blog/post-4",
+            "title": "Post number 3",
+          },
+          "nextPagePath": "/blog/post-4",
+          "pageId": 2,
+          "previousItem": Object {
+            "id": 1,
+            "path": "/blog/post-2",
+            "title": "Post number 1",
+          },
+          "previousPagePath": "/blog/post-2",
+        },
+        "path": "/blog/post-3",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 4,
+            "path": "/blog/post-5",
+            "title": "Post number 4",
+          },
+          "nextPagePath": "/blog/post-5",
+          "pageId": 3,
+          "previousItem": Object {
+            "id": 2,
+            "path": "/blog/post-3",
+            "title": "Post number 2",
+          },
+          "previousPagePath": "/blog/post-3",
+        },
+        "path": "/blog/post-4",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 5,
+            "path": "/blog/post-6",
+            "title": "Post number 5",
+          },
+          "nextPagePath": "/blog/post-6",
+          "pageId": 4,
+          "previousItem": Object {
+            "id": 3,
+            "path": "/blog/post-4",
+            "title": "Post number 3",
+          },
+          "previousPagePath": "/blog/post-4",
+        },
+        "path": "/blog/post-5",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 6,
+            "path": "/blog/post-7",
+            "title": "Post number 6",
+          },
+          "nextPagePath": "/blog/post-7",
+          "pageId": 5,
+          "previousItem": Object {
+            "id": 4,
+            "path": "/blog/post-5",
+            "title": "Post number 4",
+          },
+          "previousPagePath": "/blog/post-5",
+        },
+        "path": "/blog/post-6",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 7,
+            "path": "/blog/post-8",
+            "title": "Post number 7",
+          },
+          "nextPagePath": "/blog/post-8",
+          "pageId": 6,
+          "previousItem": Object {
+            "id": 5,
+            "path": "/blog/post-6",
+            "title": "Post number 5",
+          },
+          "previousPagePath": "/blog/post-6",
+        },
+        "path": "/blog/post-7",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 8,
+            "path": "/blog/post-9",
+            "title": "Post number 8",
+          },
+          "nextPagePath": "/blog/post-9",
+          "pageId": 7,
+          "previousItem": Object {
+            "id": 6,
+            "path": "/blog/post-7",
+            "title": "Post number 6",
+          },
+          "previousPagePath": "/blog/post-7",
+        },
+        "path": "/blog/post-8",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 9,
+            "path": "/blog/post-10",
+            "title": "Post number 9",
+          },
+          "nextPagePath": "/blog/post-10",
+          "pageId": 8,
+          "previousItem": Object {
+            "id": 7,
+            "path": "/blog/post-8",
+            "title": "Post number 7",
+          },
+          "previousPagePath": "/blog/post-8",
+        },
+        "path": "/blog/post-9",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 10,
+            "path": "/blog/post-11",
+            "title": "Post number 10",
+          },
+          "nextPagePath": "/blog/post-11",
+          "pageId": 9,
+          "previousItem": Object {
+            "id": 8,
+            "path": "/blog/post-9",
+            "title": "Post number 8",
+          },
+          "previousPagePath": "/blog/post-9",
+        },
+        "path": "/blog/post-10",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 11,
+            "path": "/blog/post-12",
+            "title": "Post number 11",
+          },
+          "nextPagePath": "/blog/post-12",
+          "pageId": 10,
+          "previousItem": Object {
+            "id": 9,
+            "path": "/blog/post-10",
+            "title": "Post number 9",
+          },
+          "previousPagePath": "/blog/post-10",
+        },
+        "path": "/blog/post-11",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 12,
+            "path": "/blog/post-13",
+            "title": "Post number 12",
+          },
+          "nextPagePath": "/blog/post-13",
+          "pageId": 11,
+          "previousItem": Object {
+            "id": 10,
+            "path": "/blog/post-11",
+            "title": "Post number 10",
+          },
+          "previousPagePath": "/blog/post-11",
+        },
+        "path": "/blog/post-12",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 13,
+            "path": "/blog/post-14",
+            "title": "Post number 13",
+          },
+          "nextPagePath": "/blog/post-14",
+          "pageId": 12,
+          "previousItem": Object {
+            "id": 11,
+            "path": "/blog/post-12",
+            "title": "Post number 11",
+          },
+          "previousPagePath": "/blog/post-12",
+        },
+        "path": "/blog/post-13",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 14,
+            "path": "/blog/post-15",
+            "title": "Post number 14",
+          },
+          "nextPagePath": "/blog/post-15",
+          "pageId": 13,
+          "previousItem": Object {
+            "id": 12,
+            "path": "/blog/post-13",
+            "title": "Post number 12",
+          },
+          "previousPagePath": "/blog/post-13",
+        },
+        "path": "/blog/post-14",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 15,
+            "path": "/blog/post-16",
+            "title": "Post number 15",
+          },
+          "nextPagePath": "/blog/post-16",
+          "pageId": 14,
+          "previousItem": Object {
+            "id": 13,
+            "path": "/blog/post-14",
+            "title": "Post number 13",
+          },
+          "previousPagePath": "/blog/post-14",
+        },
+        "path": "/blog/post-15",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 16,
+            "path": "/blog/post-17",
+            "title": "Post number 16",
+          },
+          "nextPagePath": "/blog/post-17",
+          "pageId": 15,
+          "previousItem": Object {
+            "id": 14,
+            "path": "/blog/post-15",
+            "title": "Post number 14",
+          },
+          "previousPagePath": "/blog/post-15",
+        },
+        "path": "/blog/post-16",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 17,
+            "path": "/blog/post-18",
+            "title": "Post number 17",
+          },
+          "nextPagePath": "/blog/post-18",
+          "pageId": 16,
+          "previousItem": Object {
+            "id": 15,
+            "path": "/blog/post-16",
+            "title": "Post number 15",
+          },
+          "previousPagePath": "/blog/post-16",
+        },
+        "path": "/blog/post-17",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 18,
+            "path": "/blog/post-19",
+            "title": "Post number 18",
+          },
+          "nextPagePath": "/blog/post-19",
+          "pageId": 17,
+          "previousItem": Object {
+            "id": 16,
+            "path": "/blog/post-17",
+            "title": "Post number 16",
+          },
+          "previousPagePath": "/blog/post-17",
+        },
+        "path": "/blog/post-18",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 19,
+            "path": "/blog/post-20",
+            "title": "Post number 19",
+          },
+          "nextPagePath": "/blog/post-20",
+          "pageId": 18,
+          "previousItem": Object {
+            "id": 17,
+            "path": "/blog/post-18",
+            "title": "Post number 17",
+          },
+          "previousPagePath": "/blog/post-18",
+        },
+        "path": "/blog/post-19",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 20,
+            "path": "/blog/post-21",
+            "title": "Post number 20",
+          },
+          "nextPagePath": "/blog/post-21",
+          "pageId": 19,
+          "previousItem": Object {
+            "id": 18,
+            "path": "/blog/post-19",
+            "title": "Post number 18",
+          },
+          "previousPagePath": "/blog/post-19",
+        },
+        "path": "/blog/post-20",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 21,
+            "path": "/blog/post-22",
+            "title": "Post number 21",
+          },
+          "nextPagePath": "/blog/post-22",
+          "pageId": 20,
+          "previousItem": Object {
+            "id": 19,
+            "path": "/blog/post-20",
+            "title": "Post number 19",
+          },
+          "previousPagePath": "/blog/post-20",
+        },
+        "path": "/blog/post-21",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 22,
+            "path": "/blog/post-23",
+            "title": "Post number 22",
+          },
+          "nextPagePath": "/blog/post-23",
+          "pageId": 21,
+          "previousItem": Object {
+            "id": 20,
+            "path": "/blog/post-21",
+            "title": "Post number 20",
+          },
+          "previousPagePath": "/blog/post-21",
+        },
+        "path": "/blog/post-22",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 23,
+            "path": "/blog/post-24",
+            "title": "Post number 23",
+          },
+          "nextPagePath": "/blog/post-24",
+          "pageId": 22,
+          "previousItem": Object {
+            "id": 21,
+            "path": "/blog/post-22",
+            "title": "Post number 21",
+          },
+          "previousPagePath": "/blog/post-22",
+        },
+        "path": "/blog/post-23",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 24,
+            "path": "/blog/post-25",
+            "title": "Post number 24",
+          },
+          "nextPagePath": "/blog/post-25",
+          "pageId": 23,
+          "previousItem": Object {
+            "id": 22,
+            "path": "/blog/post-23",
+            "title": "Post number 22",
+          },
+          "previousPagePath": "/blog/post-23",
+        },
+        "path": "/blog/post-24",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 25,
+            "path": "/blog/post-26",
+            "title": "Post number 25",
+          },
+          "nextPagePath": "/blog/post-26",
+          "pageId": 24,
+          "previousItem": Object {
+            "id": 23,
+            "path": "/blog/post-24",
+            "title": "Post number 23",
+          },
+          "previousPagePath": "/blog/post-24",
+        },
+        "path": "/blog/post-25",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 26,
+            "path": "/blog/post-27",
+            "title": "Post number 26",
+          },
+          "nextPagePath": "/blog/post-27",
+          "pageId": 25,
+          "previousItem": Object {
+            "id": 24,
+            "path": "/blog/post-25",
+            "title": "Post number 24",
+          },
+          "previousPagePath": "/blog/post-25",
+        },
+        "path": "/blog/post-26",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 27,
+            "path": "/blog/post-28",
+            "title": "Post number 27",
+          },
+          "nextPagePath": "/blog/post-28",
+          "pageId": 26,
+          "previousItem": Object {
+            "id": 25,
+            "path": "/blog/post-26",
+            "title": "Post number 25",
+          },
+          "previousPagePath": "/blog/post-26",
+        },
+        "path": "/blog/post-27",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 28,
+            "path": "/blog/post-29",
+            "title": "Post number 28",
+          },
+          "nextPagePath": "/blog/post-29",
+          "pageId": 27,
+          "previousItem": Object {
+            "id": 26,
+            "path": "/blog/post-27",
+            "title": "Post number 26",
+          },
+          "previousPagePath": "/blog/post-27",
+        },
+        "path": "/blog/post-28",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 29,
+            "path": "/blog/post-30",
+            "title": "Post number 29",
+          },
+          "nextPagePath": "/blog/post-30",
+          "pageId": 28,
+          "previousItem": Object {
+            "id": 27,
+            "path": "/blog/post-28",
+            "title": "Post number 27",
+          },
+          "previousPagePath": "/blog/post-28",
+        },
+        "path": "/blog/post-29",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 30,
+            "path": "/blog/post-31",
+            "title": "Post number 30",
+          },
+          "nextPagePath": "/blog/post-31",
+          "pageId": 29,
+          "previousItem": Object {
+            "id": 28,
+            "path": "/blog/post-29",
+            "title": "Post number 28",
+          },
+          "previousPagePath": "/blog/post-29",
+        },
+        "path": "/blog/post-30",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 31,
+            "path": "/blog/post-32",
+            "title": "Post number 31",
+          },
+          "nextPagePath": "/blog/post-32",
+          "pageId": 30,
+          "previousItem": Object {
+            "id": 29,
+            "path": "/blog/post-30",
+            "title": "Post number 29",
+          },
+          "previousPagePath": "/blog/post-30",
+        },
+        "path": "/blog/post-31",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 32,
+            "path": "/blog/post-33",
+            "title": "Post number 32",
+          },
+          "nextPagePath": "/blog/post-33",
+          "pageId": 31,
+          "previousItem": Object {
+            "id": 30,
+            "path": "/blog/post-31",
+            "title": "Post number 30",
+          },
+          "previousPagePath": "/blog/post-31",
+        },
+        "path": "/blog/post-32",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 33,
+            "path": "/blog/post-34",
+            "title": "Post number 33",
+          },
+          "nextPagePath": "/blog/post-34",
+          "pageId": 32,
+          "previousItem": Object {
+            "id": 31,
+            "path": "/blog/post-32",
+            "title": "Post number 31",
+          },
+          "previousPagePath": "/blog/post-32",
+        },
+        "path": "/blog/post-33",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 34,
+            "path": "/blog/post-35",
+            "title": "Post number 34",
+          },
+          "nextPagePath": "/blog/post-35",
+          "pageId": 33,
+          "previousItem": Object {
+            "id": 32,
+            "path": "/blog/post-33",
+            "title": "Post number 32",
+          },
+          "previousPagePath": "/blog/post-33",
+        },
+        "path": "/blog/post-34",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 35,
+            "path": "/blog/post-36",
+            "title": "Post number 35",
+          },
+          "nextPagePath": "/blog/post-36",
+          "pageId": 34,
+          "previousItem": Object {
+            "id": 33,
+            "path": "/blog/post-34",
+            "title": "Post number 33",
+          },
+          "previousPagePath": "/blog/post-34",
+        },
+        "path": "/blog/post-35",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 36,
+            "path": "/blog/post-37",
+            "title": "Post number 36",
+          },
+          "nextPagePath": "/blog/post-37",
+          "pageId": 35,
+          "previousItem": Object {
+            "id": 34,
+            "path": "/blog/post-35",
+            "title": "Post number 34",
+          },
+          "previousPagePath": "/blog/post-35",
+        },
+        "path": "/blog/post-36",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 37,
+            "path": "/blog/post-38",
+            "title": "Post number 37",
+          },
+          "nextPagePath": "/blog/post-38",
+          "pageId": 36,
+          "previousItem": Object {
+            "id": 35,
+            "path": "/blog/post-36",
+            "title": "Post number 35",
+          },
+          "previousPagePath": "/blog/post-36",
+        },
+        "path": "/blog/post-37",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 38,
+            "path": "/blog/post-39",
+            "title": "Post number 38",
+          },
+          "nextPagePath": "/blog/post-39",
+          "pageId": 37,
+          "previousItem": Object {
+            "id": 36,
+            "path": "/blog/post-37",
+            "title": "Post number 36",
+          },
+          "previousPagePath": "/blog/post-37",
+        },
+        "path": "/blog/post-38",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 39,
+            "path": "/blog/post-40",
+            "title": "Post number 39",
+          },
+          "nextPagePath": "/blog/post-40",
+          "pageId": 38,
+          "previousItem": Object {
+            "id": 37,
+            "path": "/blog/post-38",
+            "title": "Post number 37",
+          },
+          "previousPagePath": "/blog/post-38",
+        },
+        "path": "/blog/post-39",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 40,
+            "path": "/blog/post-41",
+            "title": "Post number 40",
+          },
+          "nextPagePath": "/blog/post-41",
+          "pageId": 39,
+          "previousItem": Object {
+            "id": 38,
+            "path": "/blog/post-39",
+            "title": "Post number 38",
+          },
+          "previousPagePath": "/blog/post-39",
+        },
+        "path": "/blog/post-40",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 41,
+            "path": "/blog/post-42",
+            "title": "Post number 41",
+          },
+          "nextPagePath": "/blog/post-42",
+          "pageId": 40,
+          "previousItem": Object {
+            "id": 39,
+            "path": "/blog/post-40",
+            "title": "Post number 39",
+          },
+          "previousPagePath": "/blog/post-40",
+        },
+        "path": "/blog/post-41",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 42,
+            "path": "/blog/post-43",
+            "title": "Post number 42",
+          },
+          "nextPagePath": "/blog/post-43",
+          "pageId": 41,
+          "previousItem": Object {
+            "id": 40,
+            "path": "/blog/post-41",
+            "title": "Post number 40",
+          },
+          "previousPagePath": "/blog/post-41",
+        },
+        "path": "/blog/post-42",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": undefined,
+          "nextPagePath": "",
+          "pageId": 42,
+          "previousItem": Object {
+            "id": 41,
+            "path": "/blog/post-42",
+            "title": "Post number 41",
+          },
+          "previousPagePath": "/blog/post-42",
+        },
+        "path": "/blog/post-43",
+      },
+    ],
+  ],
+  "results": Array [
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+  ],
+}
+`;
+
+exports[`createPagePerItem() Calls createPage() with the correct params 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 1,
+            "path": "/blog/post-2",
+            "title": "Post number 1",
+          },
+          "nextPagePath": "/blog/post-2",
+          "pageId": 0,
+          "previousItem": undefined,
+          "previousPagePath": "",
+        },
+        "path": "/blog/post-1",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 2,
+            "path": "/blog/post-3",
+            "title": "Post number 2",
+          },
+          "nextPagePath": "/blog/post-3",
+          "pageId": 1,
+          "previousItem": Object {
+            "id": 0,
+            "path": "/blog/post-1",
+            "title": "Post number 0",
+          },
+          "previousPagePath": "/blog/post-1",
+        },
+        "path": "/blog/post-2",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 3,
+            "path": "/blog/post-4",
+            "title": "Post number 3",
+          },
+          "nextPagePath": "/blog/post-4",
+          "pageId": 2,
+          "previousItem": Object {
+            "id": 1,
+            "path": "/blog/post-2",
+            "title": "Post number 1",
+          },
+          "previousPagePath": "/blog/post-2",
+        },
+        "path": "/blog/post-3",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 4,
+            "path": "/blog/post-5",
+            "title": "Post number 4",
+          },
+          "nextPagePath": "/blog/post-5",
+          "pageId": 3,
+          "previousItem": Object {
+            "id": 2,
+            "path": "/blog/post-3",
+            "title": "Post number 2",
+          },
+          "previousPagePath": "/blog/post-3",
+        },
+        "path": "/blog/post-4",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 5,
+            "path": "/blog/post-6",
+            "title": "Post number 5",
+          },
+          "nextPagePath": "/blog/post-6",
+          "pageId": 4,
+          "previousItem": Object {
+            "id": 3,
+            "path": "/blog/post-4",
+            "title": "Post number 3",
+          },
+          "previousPagePath": "/blog/post-4",
+        },
+        "path": "/blog/post-5",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 6,
+            "path": "/blog/post-7",
+            "title": "Post number 6",
+          },
+          "nextPagePath": "/blog/post-7",
+          "pageId": 5,
+          "previousItem": Object {
+            "id": 4,
+            "path": "/blog/post-5",
+            "title": "Post number 4",
+          },
+          "previousPagePath": "/blog/post-5",
+        },
+        "path": "/blog/post-6",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 7,
+            "path": "/blog/post-8",
+            "title": "Post number 7",
+          },
+          "nextPagePath": "/blog/post-8",
+          "pageId": 6,
+          "previousItem": Object {
+            "id": 5,
+            "path": "/blog/post-6",
+            "title": "Post number 5",
+          },
+          "previousPagePath": "/blog/post-6",
+        },
+        "path": "/blog/post-7",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 8,
+            "path": "/blog/post-9",
+            "title": "Post number 8",
+          },
+          "nextPagePath": "/blog/post-9",
+          "pageId": 7,
+          "previousItem": Object {
+            "id": 6,
+            "path": "/blog/post-7",
+            "title": "Post number 6",
+          },
+          "previousPagePath": "/blog/post-7",
+        },
+        "path": "/blog/post-8",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 9,
+            "path": "/blog/post-10",
+            "title": "Post number 9",
+          },
+          "nextPagePath": "/blog/post-10",
+          "pageId": 8,
+          "previousItem": Object {
+            "id": 7,
+            "path": "/blog/post-8",
+            "title": "Post number 7",
+          },
+          "previousPagePath": "/blog/post-8",
+        },
+        "path": "/blog/post-9",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 10,
+            "path": "/blog/post-11",
+            "title": "Post number 10",
+          },
+          "nextPagePath": "/blog/post-11",
+          "pageId": 9,
+          "previousItem": Object {
+            "id": 8,
+            "path": "/blog/post-9",
+            "title": "Post number 8",
+          },
+          "previousPagePath": "/blog/post-9",
+        },
+        "path": "/blog/post-10",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 11,
+            "path": "/blog/post-12",
+            "title": "Post number 11",
+          },
+          "nextPagePath": "/blog/post-12",
+          "pageId": 10,
+          "previousItem": Object {
+            "id": 9,
+            "path": "/blog/post-10",
+            "title": "Post number 9",
+          },
+          "previousPagePath": "/blog/post-10",
+        },
+        "path": "/blog/post-11",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 12,
+            "path": "/blog/post-13",
+            "title": "Post number 12",
+          },
+          "nextPagePath": "/blog/post-13",
+          "pageId": 11,
+          "previousItem": Object {
+            "id": 10,
+            "path": "/blog/post-11",
+            "title": "Post number 10",
+          },
+          "previousPagePath": "/blog/post-11",
+        },
+        "path": "/blog/post-12",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 13,
+            "path": "/blog/post-14",
+            "title": "Post number 13",
+          },
+          "nextPagePath": "/blog/post-14",
+          "pageId": 12,
+          "previousItem": Object {
+            "id": 11,
+            "path": "/blog/post-12",
+            "title": "Post number 11",
+          },
+          "previousPagePath": "/blog/post-12",
+        },
+        "path": "/blog/post-13",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 14,
+            "path": "/blog/post-15",
+            "title": "Post number 14",
+          },
+          "nextPagePath": "/blog/post-15",
+          "pageId": 13,
+          "previousItem": Object {
+            "id": 12,
+            "path": "/blog/post-13",
+            "title": "Post number 12",
+          },
+          "previousPagePath": "/blog/post-13",
+        },
+        "path": "/blog/post-14",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 15,
+            "path": "/blog/post-16",
+            "title": "Post number 15",
+          },
+          "nextPagePath": "/blog/post-16",
+          "pageId": 14,
+          "previousItem": Object {
+            "id": 13,
+            "path": "/blog/post-14",
+            "title": "Post number 13",
+          },
+          "previousPagePath": "/blog/post-14",
+        },
+        "path": "/blog/post-15",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 16,
+            "path": "/blog/post-17",
+            "title": "Post number 16",
+          },
+          "nextPagePath": "/blog/post-17",
+          "pageId": 15,
+          "previousItem": Object {
+            "id": 14,
+            "path": "/blog/post-15",
+            "title": "Post number 14",
+          },
+          "previousPagePath": "/blog/post-15",
+        },
+        "path": "/blog/post-16",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 17,
+            "path": "/blog/post-18",
+            "title": "Post number 17",
+          },
+          "nextPagePath": "/blog/post-18",
+          "pageId": 16,
+          "previousItem": Object {
+            "id": 15,
+            "path": "/blog/post-16",
+            "title": "Post number 15",
+          },
+          "previousPagePath": "/blog/post-16",
+        },
+        "path": "/blog/post-17",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 18,
+            "path": "/blog/post-19",
+            "title": "Post number 18",
+          },
+          "nextPagePath": "/blog/post-19",
+          "pageId": 17,
+          "previousItem": Object {
+            "id": 16,
+            "path": "/blog/post-17",
+            "title": "Post number 16",
+          },
+          "previousPagePath": "/blog/post-17",
+        },
+        "path": "/blog/post-18",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 19,
+            "path": "/blog/post-20",
+            "title": "Post number 19",
+          },
+          "nextPagePath": "/blog/post-20",
+          "pageId": 18,
+          "previousItem": Object {
+            "id": 17,
+            "path": "/blog/post-18",
+            "title": "Post number 17",
+          },
+          "previousPagePath": "/blog/post-18",
+        },
+        "path": "/blog/post-19",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 20,
+            "path": "/blog/post-21",
+            "title": "Post number 20",
+          },
+          "nextPagePath": "/blog/post-21",
+          "pageId": 19,
+          "previousItem": Object {
+            "id": 18,
+            "path": "/blog/post-19",
+            "title": "Post number 18",
+          },
+          "previousPagePath": "/blog/post-19",
+        },
+        "path": "/blog/post-20",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 21,
+            "path": "/blog/post-22",
+            "title": "Post number 21",
+          },
+          "nextPagePath": "/blog/post-22",
+          "pageId": 20,
+          "previousItem": Object {
+            "id": 19,
+            "path": "/blog/post-20",
+            "title": "Post number 19",
+          },
+          "previousPagePath": "/blog/post-20",
+        },
+        "path": "/blog/post-21",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 22,
+            "path": "/blog/post-23",
+            "title": "Post number 22",
+          },
+          "nextPagePath": "/blog/post-23",
+          "pageId": 21,
+          "previousItem": Object {
+            "id": 20,
+            "path": "/blog/post-21",
+            "title": "Post number 20",
+          },
+          "previousPagePath": "/blog/post-21",
+        },
+        "path": "/blog/post-22",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 23,
+            "path": "/blog/post-24",
+            "title": "Post number 23",
+          },
+          "nextPagePath": "/blog/post-24",
+          "pageId": 22,
+          "previousItem": Object {
+            "id": 21,
+            "path": "/blog/post-22",
+            "title": "Post number 21",
+          },
+          "previousPagePath": "/blog/post-22",
+        },
+        "path": "/blog/post-23",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 24,
+            "path": "/blog/post-25",
+            "title": "Post number 24",
+          },
+          "nextPagePath": "/blog/post-25",
+          "pageId": 23,
+          "previousItem": Object {
+            "id": 22,
+            "path": "/blog/post-23",
+            "title": "Post number 22",
+          },
+          "previousPagePath": "/blog/post-23",
+        },
+        "path": "/blog/post-24",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 25,
+            "path": "/blog/post-26",
+            "title": "Post number 25",
+          },
+          "nextPagePath": "/blog/post-26",
+          "pageId": 24,
+          "previousItem": Object {
+            "id": 23,
+            "path": "/blog/post-24",
+            "title": "Post number 23",
+          },
+          "previousPagePath": "/blog/post-24",
+        },
+        "path": "/blog/post-25",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 26,
+            "path": "/blog/post-27",
+            "title": "Post number 26",
+          },
+          "nextPagePath": "/blog/post-27",
+          "pageId": 25,
+          "previousItem": Object {
+            "id": 24,
+            "path": "/blog/post-25",
+            "title": "Post number 24",
+          },
+          "previousPagePath": "/blog/post-25",
+        },
+        "path": "/blog/post-26",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 27,
+            "path": "/blog/post-28",
+            "title": "Post number 27",
+          },
+          "nextPagePath": "/blog/post-28",
+          "pageId": 26,
+          "previousItem": Object {
+            "id": 25,
+            "path": "/blog/post-26",
+            "title": "Post number 25",
+          },
+          "previousPagePath": "/blog/post-26",
+        },
+        "path": "/blog/post-27",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 28,
+            "path": "/blog/post-29",
+            "title": "Post number 28",
+          },
+          "nextPagePath": "/blog/post-29",
+          "pageId": 27,
+          "previousItem": Object {
+            "id": 26,
+            "path": "/blog/post-27",
+            "title": "Post number 26",
+          },
+          "previousPagePath": "/blog/post-27",
+        },
+        "path": "/blog/post-28",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 29,
+            "path": "/blog/post-30",
+            "title": "Post number 29",
+          },
+          "nextPagePath": "/blog/post-30",
+          "pageId": 28,
+          "previousItem": Object {
+            "id": 27,
+            "path": "/blog/post-28",
+            "title": "Post number 27",
+          },
+          "previousPagePath": "/blog/post-28",
+        },
+        "path": "/blog/post-29",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 30,
+            "path": "/blog/post-31",
+            "title": "Post number 30",
+          },
+          "nextPagePath": "/blog/post-31",
+          "pageId": 29,
+          "previousItem": Object {
+            "id": 28,
+            "path": "/blog/post-29",
+            "title": "Post number 28",
+          },
+          "previousPagePath": "/blog/post-29",
+        },
+        "path": "/blog/post-30",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 31,
+            "path": "/blog/post-32",
+            "title": "Post number 31",
+          },
+          "nextPagePath": "/blog/post-32",
+          "pageId": 30,
+          "previousItem": Object {
+            "id": 29,
+            "path": "/blog/post-30",
+            "title": "Post number 29",
+          },
+          "previousPagePath": "/blog/post-30",
+        },
+        "path": "/blog/post-31",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 32,
+            "path": "/blog/post-33",
+            "title": "Post number 32",
+          },
+          "nextPagePath": "/blog/post-33",
+          "pageId": 31,
+          "previousItem": Object {
+            "id": 30,
+            "path": "/blog/post-31",
+            "title": "Post number 30",
+          },
+          "previousPagePath": "/blog/post-31",
+        },
+        "path": "/blog/post-32",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 33,
+            "path": "/blog/post-34",
+            "title": "Post number 33",
+          },
+          "nextPagePath": "/blog/post-34",
+          "pageId": 32,
+          "previousItem": Object {
+            "id": 31,
+            "path": "/blog/post-32",
+            "title": "Post number 31",
+          },
+          "previousPagePath": "/blog/post-32",
+        },
+        "path": "/blog/post-33",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 34,
+            "path": "/blog/post-35",
+            "title": "Post number 34",
+          },
+          "nextPagePath": "/blog/post-35",
+          "pageId": 33,
+          "previousItem": Object {
+            "id": 32,
+            "path": "/blog/post-33",
+            "title": "Post number 32",
+          },
+          "previousPagePath": "/blog/post-33",
+        },
+        "path": "/blog/post-34",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 35,
+            "path": "/blog/post-36",
+            "title": "Post number 35",
+          },
+          "nextPagePath": "/blog/post-36",
+          "pageId": 34,
+          "previousItem": Object {
+            "id": 33,
+            "path": "/blog/post-34",
+            "title": "Post number 33",
+          },
+          "previousPagePath": "/blog/post-34",
+        },
+        "path": "/blog/post-35",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 36,
+            "path": "/blog/post-37",
+            "title": "Post number 36",
+          },
+          "nextPagePath": "/blog/post-37",
+          "pageId": 35,
+          "previousItem": Object {
+            "id": 34,
+            "path": "/blog/post-35",
+            "title": "Post number 34",
+          },
+          "previousPagePath": "/blog/post-35",
+        },
+        "path": "/blog/post-36",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 37,
+            "path": "/blog/post-38",
+            "title": "Post number 37",
+          },
+          "nextPagePath": "/blog/post-38",
+          "pageId": 36,
+          "previousItem": Object {
+            "id": 35,
+            "path": "/blog/post-36",
+            "title": "Post number 35",
+          },
+          "previousPagePath": "/blog/post-36",
+        },
+        "path": "/blog/post-37",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 38,
+            "path": "/blog/post-39",
+            "title": "Post number 38",
+          },
+          "nextPagePath": "/blog/post-39",
+          "pageId": 37,
+          "previousItem": Object {
+            "id": 36,
+            "path": "/blog/post-37",
+            "title": "Post number 36",
+          },
+          "previousPagePath": "/blog/post-37",
+        },
+        "path": "/blog/post-38",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 39,
+            "path": "/blog/post-40",
+            "title": "Post number 39",
+          },
+          "nextPagePath": "/blog/post-40",
+          "pageId": 38,
+          "previousItem": Object {
+            "id": 37,
+            "path": "/blog/post-38",
+            "title": "Post number 37",
+          },
+          "previousPagePath": "/blog/post-38",
+        },
+        "path": "/blog/post-39",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 40,
+            "path": "/blog/post-41",
+            "title": "Post number 40",
+          },
+          "nextPagePath": "/blog/post-41",
+          "pageId": 39,
+          "previousItem": Object {
+            "id": 38,
+            "path": "/blog/post-39",
+            "title": "Post number 38",
+          },
+          "previousPagePath": "/blog/post-39",
+        },
+        "path": "/blog/post-40",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 41,
+            "path": "/blog/post-42",
+            "title": "Post number 41",
+          },
+          "nextPagePath": "/blog/post-42",
+          "pageId": 40,
+          "previousItem": Object {
+            "id": 39,
+            "path": "/blog/post-40",
+            "title": "Post number 39",
+          },
+          "previousPagePath": "/blog/post-40",
+        },
+        "path": "/blog/post-41",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": Object {
+            "id": 42,
+            "path": "/blog/post-43",
+            "title": "Post number 42",
+          },
+          "nextPagePath": "/blog/post-43",
+          "pageId": 41,
+          "previousItem": Object {
+            "id": 40,
+            "path": "/blog/post-41",
+            "title": "Post number 40",
+          },
+          "previousPagePath": "/blog/post-41",
+        },
+        "path": "/blog/post-42",
+      },
+    ],
+    Array [
+      Object {
+        "component": "/path/to/some/template.js",
+        "context": Object {
+          "nextItem": undefined,
+          "nextPagePath": "",
+          "pageId": 42,
+          "previousItem": Object {
+            "id": 41,
+            "path": "/blog/post-42",
+            "title": "Post number 41",
+          },
+          "previousPagePath": "/blog/post-42",
+        },
+        "path": "/blog/post-43",
+      },
+    ],
+  ],
+  "results": Array [
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+  ],
+}
+`;
+
 exports[`paginate allows fine-tuning pathPrefix with a function 1`] = `
 [MockFunction] {
   "calls": Array [
@@ -86,6 +3314,180 @@ exports[`paginate allows fine-tuning pathPrefix with a function 1`] = `
 `;
 
 exports[`paginate creates pages and forwards context 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      Object {
+        "component": "path/to/blog",
+        "context": Object {
+          "additionalContext": true,
+          "humanPageNumber": 1,
+          "limit": 5,
+          "nextPagePath": "/blog/2",
+          "numberOfPages": 4,
+          "pageNumber": 0,
+          "previousPagePath": "",
+          "skip": 0,
+        },
+        "path": "/blog",
+      },
+    ],
+    Array [
+      Object {
+        "component": "path/to/blog",
+        "context": Object {
+          "additionalContext": true,
+          "humanPageNumber": 2,
+          "limit": 3,
+          "nextPagePath": "/blog/3",
+          "numberOfPages": 4,
+          "pageNumber": 1,
+          "previousPagePath": "/blog",
+          "skip": 5,
+        },
+        "path": "/blog/2",
+      },
+    ],
+    Array [
+      Object {
+        "component": "path/to/blog",
+        "context": Object {
+          "additionalContext": true,
+          "humanPageNumber": 3,
+          "limit": 3,
+          "nextPagePath": "/blog/4",
+          "numberOfPages": 4,
+          "pageNumber": 2,
+          "previousPagePath": "/blog/2",
+          "skip": 8,
+        },
+        "path": "/blog/3",
+      },
+    ],
+    Array [
+      Object {
+        "component": "path/to/blog",
+        "context": Object {
+          "additionalContext": true,
+          "humanPageNumber": 4,
+          "limit": 3,
+          "nextPagePath": "",
+          "numberOfPages": 4,
+          "pageNumber": 3,
+          "previousPagePath": "/blog/3",
+          "skip": 11,
+        },
+        "path": "/blog/4",
+      },
+    ],
+  ],
+  "results": Array [
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+  ],
+}
+`;
+
+exports[`paginate() allows fine-tuning pathPrefix with a function 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      Object {
+        "component": "path/to/blog",
+        "context": Object {
+          "humanPageNumber": 1,
+          "limit": 3,
+          "nextPagePath": "/blog/page/2",
+          "numberOfPages": 4,
+          "pageNumber": 0,
+          "previousPagePath": "",
+          "skip": 0,
+        },
+        "path": "/blog",
+      },
+    ],
+    Array [
+      Object {
+        "component": "path/to/blog",
+        "context": Object {
+          "humanPageNumber": 2,
+          "limit": 3,
+          "nextPagePath": "/blog/page/3",
+          "numberOfPages": 4,
+          "pageNumber": 1,
+          "previousPagePath": "/blog",
+          "skip": 3,
+        },
+        "path": "/blog/page/2",
+      },
+    ],
+    Array [
+      Object {
+        "component": "path/to/blog",
+        "context": Object {
+          "humanPageNumber": 3,
+          "limit": 3,
+          "nextPagePath": "/blog/page/4",
+          "numberOfPages": 4,
+          "pageNumber": 2,
+          "previousPagePath": "/blog/page/2",
+          "skip": 6,
+        },
+        "path": "/blog/page/3",
+      },
+    ],
+    Array [
+      Object {
+        "component": "path/to/blog",
+        "context": Object {
+          "humanPageNumber": 4,
+          "limit": 3,
+          "nextPagePath": "",
+          "numberOfPages": 4,
+          "pageNumber": 3,
+          "previousPagePath": "/blog/page/3",
+          "skip": 9,
+        },
+        "path": "/blog/page/4",
+      },
+    ],
+  ],
+  "results": Array [
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+  ],
+}
+`;
+
+exports[`paginate() creates pages and forwards context 1`] = `
 [MockFunction] {
   "calls": Array [
     Array [
