@@ -25,12 +25,12 @@ export const getNextItem = (items: {}[], index: number): ReturnedItem => {
   return get(`[${index + 1}]`, items);
 };
 
-export type PathPrefix =
-  | string
-  | (({
-      pageNumber: number,
-      numberOfPages: number
-    }) => string);
+type PathPrefixFunction = ({
+  pageNumber: number,
+  numberOfPages: number
+}) => string;
+
+export type PathPrefix = string | PathPrefixFunction;
 
 export const paginatedPath = (
   pathPrefix: PathPrefix,
