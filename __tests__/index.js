@@ -1,4 +1,4 @@
-import { paginate, createPagePerItem } from "../src"
+import { paginate, createPagePerItem } from "../src";
 
 describe("paginate", () => {
   it("creates pages and forwards context", () => {
@@ -21,7 +21,8 @@ describe("paginate", () => {
       createPage,
       items: Array(12).fill(),
       itemsPerPage: 3,
-      pathPrefix: ({ pageNumber }) => pageNumber === 0 ? "/blog" : "/blog/page",
+      pathPrefix: ({ pageNumber }) =>
+        pageNumber === 0 ? "/blog" : "/blog/page",
       component: "path/to/blog"
     });
     expect(createPage).toMatchSnapshot();
