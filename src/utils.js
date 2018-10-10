@@ -49,20 +49,21 @@ export const paginatedPath = (
     return "";
   }
 
-  const computedPathPrefix =
+  // Calculate a path prefix either by calling `pathPrefix()` if it's a function
+  // or simply using `pathPrefix` if it is a string.
+  const prefix =
     typeof pathPrefix === "function"
       ? pathPrefix({ pageNumber, numberOfPages })
       : pathPrefix;
 
   // If this is page 0, return only the pathPrefix
   if (pageNumber === 0) {
-    return computedPathPrefix;
+    return prefix;
   }
 
   // Othewrise, add a slash and the number + 1. We add 1 because `pageNumber` is
   // zero indexed, but for human consuption, we want 1 indexed numbers.
-  return `${computedPathPrefix !== "/" ? computedPathPrefix : ""}/${pageNumber +
-    1}`;
+  return `${prefix !== "/" ? prefix : ""}/${pageNumber + 1}`;
   // NOTE: If `pathPrefix` is a single slash (the index page) then we do not
   // want to output two slashes, so we omit it.
 };
