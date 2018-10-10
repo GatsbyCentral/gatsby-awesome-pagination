@@ -9,6 +9,7 @@ GitHub issues.
 * [QuickStart](#quick-start)
 * [Introduction](#introduction)
 * [Philosophy](#philosophy)
+* [Notes](#notes)
 
 ## Quick start
 
@@ -177,7 +178,9 @@ createPagePerItem({
 })
 ```
 
-## Flow
+## Notes
+
+### Flow
 
 This plugin is written using [flow](https://flow.org/). There are some
 limitations when using flow and [lodash](https://lodash.com/). Specifically
@@ -185,3 +188,11 @@ limitations when using flow and [lodash](https://lodash.com/). Specifically
 `$FlowExpectError` and explicitly define the type of something to workaround. A
 more elegant solution does not currently seem to exist. Any input on improving
 the typing is greatly appreciated in the plugin's issues.
+
+### Contributors
+
+Thanks to the following for their contributions:
+
+* https://github.com/Pyrax
+* https://github.com/JesseSingleton
+* https://github.com/silvenon
