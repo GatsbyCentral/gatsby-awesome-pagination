@@ -131,7 +131,7 @@ In addition to the arguments above, `paginate()` also supports:
 
 * `itemsPerPage`* - An integer, how many items should be displayed on each page
 * `itemsPerFirstPage` - An integer, how many items should be displayed on the **first** page
-* `pathPrefix`* - A string, or a function returning a string, to which `/2`, `/3`, etc will be added
+* `pathPrefix`* - A string, the path like `/blog` (or string returning function), to which `/2`, `/3`, etc will be added
 * `context` - A base context object which is extended with the pagination context values
 
 Example:
@@ -147,19 +147,20 @@ paginate({
 })
 ```
 
-If `pathPrefix` is a function, it receives `pageNumber` and `numberOfPages`, which you can use to fine-tune the path prefix:
+#### pathPrefix()
+
+For more advanced use cases, you can supply a function to `pathPrefix`. This
+function will receive a single object as its only argument, that object will
+contain `pageNumber` and `numberOfPages`, both integers.
+
+A simple example implementation could be:
 
 ```javascript
-pathPrefix: ({ pageNumber, numberOfPages }) =>
+const pathPrefix = ({ pageNumber, numberOfPages }) =>
   pageNumber === 0 ? '/blog' : '/blog/page'
 ```
 
-This will result in the following paths:
-
-  - `/blog`
-  - `/blog/page/2`
-  - `/blog/page/3`
-  - etc.
+This example produces pages like `/blog`, `/blog/page/2`, `/blog/page/3`, etc.
 
 ### `createPagePerItem()`
 
