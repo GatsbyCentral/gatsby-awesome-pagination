@@ -193,6 +193,15 @@ createPagePerItem({
 })
 ```
 
+Each page's `context` automatically receives the following values:
+
+* `previousPagePath` - The path to the previous page or `undefined`
+* `previousItem` - A copy of the previous element from `items`
+* `previousPageId` - The ID of the previous page
+* `nextPagePath` - The path to the next page or `undefined`
+* `nextItem` - A copy of the next element from `items`
+* `nextPageId` - The ID of the next page
+
 ## Notes
 
 ### Flow
