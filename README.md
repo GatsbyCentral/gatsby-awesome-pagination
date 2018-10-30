@@ -74,16 +74,6 @@ const BlogIndex = (props) => {
 
 For a more detailed example, see [docs/examples.md](docs/examples.md)
 
-Your page's `context` automatically receives the following values:
-
-* `pageNumber` - The page number (starting from 0)
-* `humanPageNumber` - The page number (starting from 1) for human consumption
-* `skip` - The $skip you can use in a GraphQL query
-* `limit` - The $limit you can use in a GraphQL query
-* `numberOfPages` - The total number of pages
-* `previousPagePath` - The path to the previous page or `undefined`
-* `nextPagePath` - The path to the next page or `undefined`
-
 ## Introduction
 
 Love Gatsby, wanna paginate. Sweet, that's exactly what this package is for.
@@ -146,6 +136,16 @@ paginate({
   pathPrefix: '/blog'
 })
 ```
+
+Each page's `context` automatically receives the following values:
+
+* `pageNumber` - The page number (starting from 0)
+* `humanPageNumber` - The page number (starting from 1) for human consumption
+* `skip` - The $skip you can use in a GraphQL query
+* `limit` - The $limit you can use in a GraphQL query
+* `numberOfPages` - The total number of pages
+* `previousPagePath` - The path to the previous page or `undefined`
+* `nextPagePath` - The path to the next page or `undefined`
 
 #### pathPrefix()
 
