@@ -13,7 +13,7 @@ import {
   calculateSkip
 } from "./utils";
 
-import type { PathPrefix } from './utils'
+import type { PathPrefix } from "./utils";
 
 type CreatePage = ({}) => void;
 
@@ -131,8 +131,10 @@ export const createPagePerItem = (opts: CreatePagePerItemOpts): void => {
       pageId: id,
       previousPagePath: previousPath,
       previousItem: previousItem,
+      previousPageId: getId(previousItem) || "",
       nextPagePath: nextPath,
-      nextItem: nextItem
+      nextItem: nextItem,
+      nextPageId: getId(nextItem) || ""
     });
 
     // Call `createPage()` for this item
