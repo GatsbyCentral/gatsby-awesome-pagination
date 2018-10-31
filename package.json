@@ -6,6 +6,7 @@
     "lib"
   ],
   "main": "lib/index.js",
+  "browser": "lib/components.js",
   "scripts": {
     "prepack": "npm run build",
     "build": "npm run prepack:babel && npm run prepack:flow",
@@ -41,5 +42,9 @@
   },
   "dependencies": {
     "lodash": "^4.17.10"
+  },
+  "peerDependencies": {
+    "gatsby": "^2.0.0",
+    "react": "^16.0.0"
   }
 }
