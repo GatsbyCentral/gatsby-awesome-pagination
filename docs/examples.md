@@ -102,8 +102,8 @@ Render posts like so:
 
 ```javascript
 const BlogIndex = props => {
-  const { pathContext } = props;
-  const { previousPagePath, nextPagePath } = pathContext;
+  const { pageContext } = props;
+  const { previousPagePath, nextPagePath } = pageContext;
 
   return (
     <div>
@@ -138,8 +138,8 @@ Then inside your component you can render links to the previous and next posts.
 
 ```javascript
 const BlogPost = props => {
-  const { pathContext, data } = props;
-  const { previousPagePath, nextPagePath, previousPageItem, nextPageItem } = pathContext;
+  const { pageContext, data } = props;
+  const { previousPagePath, nextPagePath, previousPageItem, nextPageItem } = pageContext;
   const { post } = data;
 
   return (
@@ -148,12 +148,12 @@ const BlogPost = props => {
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
       <div>
         {previousPagePath ? (
-          <Link to={pathContext.previousPagePath}>
+          <Link to={pageContext.previousPagePath}>
             {previousPageItem.frontmatter.title}
           </Link>
         ) : null}
         {nextPagePath ? (
-          <Link to={pathContext.nextPagePath}>
+          <Link to={pageContext.nextPagePath}>
             {nextPageItem.frontmatter.title}
           </Link>
         ) : null}
