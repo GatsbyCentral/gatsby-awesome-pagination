@@ -64,8 +64,8 @@ const BlogIndex = (props) => {
       {data.allMarkdownRemark.edges.map(edge => <PostItem item={edge.node}/>)}
       <div>
         {/* previousPageLink and nextPageLink were added by the plugin */ }
-        <Link to={props.pathContext.previousPagePath}>Previous</Link>
-        <Link to={props.pathContext.nextPagePath}>Next</Link>
+        <Link to={props.pageContext.previousPagePath}>Previous</Link>
+        <Link to={props.pageContext.nextPagePath}>Next</Link>
       </div>
     </div>
   )
