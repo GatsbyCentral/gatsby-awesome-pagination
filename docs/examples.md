@@ -49,7 +49,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           createPage,
           items: blogPosts,
           component: blogIndex,
-          perPage: 10,
+          itemsPerPage: 10,
           itemsPerFirstPage: 3,
           pathPrefix: "/blog"
         });
