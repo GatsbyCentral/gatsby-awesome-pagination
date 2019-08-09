@@ -17,6 +17,8 @@ Open `gatsby-node.js` and import:
 
 ```javascript
 import { paginate } from 'gatsby-awesome-pagination';
+OR
+const { paginate } = require("gatsby-awesome-pagination")
 ```
 
 Then, use `paginate()` like so:
