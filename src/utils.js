@@ -61,7 +61,7 @@ export const paginatedPath = (
     return prefix;
   }
 
-  // Othewrise, add a slash and the number + 1. We add 1 because `pageNumber` is
+  // Otherwise, add a slash and the number + 1. We add 1 because `pageNumber` is
   // zero indexed, but for human consuption, we want 1 indexed numbers.
   return `${prefix !== "/" ? prefix : ""}/${pageNumber + 1}`;
   // NOTE: If `pathPrefix` is a single slash (the index page) then we do not
