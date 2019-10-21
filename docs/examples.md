@@ -123,8 +123,8 @@ First, you can retrieve any data you need like so:
 
 ```javascript
 export const pageQuery = graphql`
-  query($id: ID!, $previousPageId: ID!, $nextPageId: ID!) {
-    post: markdownRemark(id: { eq: $id }) {
+  query($pageId: String!) {
+    post: markdownRemark(id: { eq: $pageId }) {
       html
       frontmatter {
         title
@@ -139,7 +139,7 @@ Then inside your component you can render links to the previous and next posts.
 ```javascript
 const BlogPost = props => {
   const { pageContext, data } = props;
-  const { previousPagePath, nextPagePath, previousPageItem, nextPageItem } = pageContext;
+  const { previousPagePath, nextPagePath, previousItem, nextItem } = pageContext;
   const { post } = data;
 
   return (
@@ -149,12 +149,12 @@ const BlogPost = props => {
       <div>
         {previousPagePath ? (
           <Link to={pageContext.previousPagePath}>
-            {previousPageItem.frontmatter.title}
+            {previousItem.node.frontmatter.title}
           </Link>
         ) : null}
         {nextPagePath ? (
           <Link to={pageContext.nextPagePath}>
-            {nextPageItem.frontmatter.title}
+            {nextItem.node.frontmatter.title}
           </Link>
         ) : null}
       </div>
