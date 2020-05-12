@@ -1,8 +1,9 @@
 Awesome Pagination for Gatsby
 ---
 
-This plugin is under active development, all feedback / comments welcome via
-GitHub issues.
+A sensible approach to pagination for Gatsby sites.
+
+Please post questions on StackOverflow, only bug reports are accepted via GitHub.
 
 ## Contents
 
