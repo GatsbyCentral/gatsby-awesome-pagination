@@ -1,6 +1,6 @@
 {
   "name": "gatsby-awesome-pagination",
-  "version": "0.3.5",
+  "version": "0.3.6",
   "description": "An opinionated, more awesome approach to pagination in Gatsby",
   "files": [
     "lib"
