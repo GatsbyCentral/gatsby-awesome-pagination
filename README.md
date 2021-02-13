@@ -124,6 +124,7 @@ In addition to the arguments above, `paginate()` also supports:
 * `itemsPerFirstPage` - An integer, how many items should be displayed on the **first** page
 * `pathPrefix`* - A string, the path like `/blog` (or string returning function), to which `/2`, `/3`, etc will be added
 * `context` - A base context object which is extended with the pagination context values
+* `trailingSlash` - A boolean, indicating the setting of canonical URLs with trailing slashes
 
 Example:
 
@@ -134,7 +135,8 @@ paginate({
   items: blogPosts,
   itemsPerPage: 15,
   itemsPerFirstPage: 3,
-  pathPrefix: '/blog'
+  pathPrefix: '/blog',
+  trailingSlash: true
 })
 ```
 
