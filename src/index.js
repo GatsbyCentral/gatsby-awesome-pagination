@@ -24,7 +24,8 @@ type PaginateOpts = {
   itemsPerFirstPage?: number,
   pathPrefix: PathPrefix,
   component: string,
-  context?: {}
+  context?: {},
+  trailingSlash?: boolean
 };
 export const paginate = (opts: PaginateOpts): void => {
   const {
@@ -34,7 +35,8 @@ export const paginate = (opts: PaginateOpts): void => {
     itemsPerFirstPage,
     pathPrefix,
     component,
-    context
+    context,
+    trailingSlash = false
   } = opts;
 
   // How many items do we have in total? We use `items.length` here. In fact, we
@@ -58,18 +60,20 @@ export const paginate = (opts: PaginateOpts): void => {
   // Iterate as many times as we need pages
   times((pageNumber: number) => {
     // Create the path for this page
-    const path = paginatedPath(pathPrefix, pageNumber, numberOfPages);
+    const path = paginatedPath(pathPrefix, pageNumber, numberOfPages, trailingSlash);
 
     // Calculate the path for the previous and next pages
     const previousPagePath = paginatedPath(
       pathPrefix,
       pageNumber - 1,
-      numberOfPages
+      numberOfPages,
+      trailingSlash
     );
     const nextPagePath = paginatedPath(
       pathPrefix,
       pageNumber + 1,
-      numberOfPages
+      numberOfPages,
+      trailingSlash
     );
 
     // Call `createPage()` for this paginated page

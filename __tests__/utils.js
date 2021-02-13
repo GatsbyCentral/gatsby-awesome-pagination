@@ -31,12 +31,16 @@ describe("utils", () => {
   });
 
   describe("paginatedPath()", () => {
-    it("Returns only one slash for the index page", () => {
+    it("Returns the first index page as a single slash", () => {
       expect(paginatedPath("/", 0, 3)).toEqual("/");
     });
 
-    it("Returns /2 for the second index page", () => {
+    it("Returns the second index page", () => {
       expect(paginatedPath("/", 1, 3)).toEqual("/2");
+    });
+    
+    it("Returns the second index page (with trailingSlash)", () => {
+      expect(paginatedPath("/", 1, 3, true)).toEqual("/2/");
     });
 
     it("Passes pageNumber and numberOfPages to pathPrefix()", () => {

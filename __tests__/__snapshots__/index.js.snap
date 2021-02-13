@@ -1247,6 +1247,95 @@ exports[`paginate() allows fine-tuning pathPrefix with a function 1`] = `
 }
 `;
 
+exports[`paginate() creates pages and forwards context (with trailingSlash) 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      Object {
+        "component": "path/to/blog",
+        "context": Object {
+          "additionalContext": true,
+          "humanPageNumber": 1,
+          "limit": 5,
+          "nextPagePath": "/blog/2/",
+          "numberOfPages": 4,
+          "pageNumber": 0,
+          "previousPagePath": "",
+          "skip": 0,
+        },
+        "path": "/blog/",
+      },
+    ],
+    Array [
+      Object {
+        "component": "path/to/blog",
+        "context": Object {
+          "additionalContext": true,
+          "humanPageNumber": 2,
+          "limit": 3,
+          "nextPagePath": "/blog/3/",
+          "numberOfPages": 4,
+          "pageNumber": 1,
+          "previousPagePath": "/blog/",
+          "skip": 5,
+        },
+        "path": "/blog/2/",
+      },
+    ],
+    Array [
+      Object {
+        "component": "path/to/blog",
+        "context": Object {
+          "additionalContext": true,
+          "humanPageNumber": 3,
+          "limit": 3,
+          "nextPagePath": "/blog/4/",
+          "numberOfPages": 4,
+          "pageNumber": 2,
+          "previousPagePath": "/blog/2/",
+          "skip": 8,
+        },
+        "path": "/blog/3/",
+      },
+    ],
+    Array [
+      Object {
+        "component": "path/to/blog",
+        "context": Object {
+          "additionalContext": true,
+          "humanPageNumber": 4,
+          "limit": 3,
+          "nextPagePath": "",
+          "numberOfPages": 4,
+          "pageNumber": 3,
+          "previousPagePath": "/blog/3/",
+          "skip": 11,
+        },
+        "path": "/blog/4/",
+      },
+    ],
+  ],
+  "results": Array [
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+  ],
+}
+`;
+
 exports[`paginate() creates pages and forwards context 1`] = `
 [MockFunction] {
   "calls": Array [

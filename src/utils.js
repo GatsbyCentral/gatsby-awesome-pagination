@@ -35,7 +35,8 @@ export type PathPrefix = string | PathPrefixFunction;
 export const paginatedPath = (
   pathPrefix: PathPrefix,
   pageNumber: number,
-  numberOfPages: number
+  numberOfPages: number,
+  trailingSlash: Boolean
 ): string => {
   // If this page is less than zero (-1 for example), then it  it does not
   // exist, return an empty string.
@@ -56,14 +57,18 @@ export const paginatedPath = (
       ? pathPrefix({ pageNumber, numberOfPages })
       : pathPrefix;
 
-  // If this is page 0, return only the pathPrefix
+  // If first page
   if (pageNumber === 0) {
-    return prefix;
+    //if single slash, return as is
+    if(prefix === '/')
+      return prefix;
+    //else, check for trailingSlash
+    return prefix + (trailingSlash ? "/" : "");
   }
 
   // Otherwise, add a slash and the number + 1. We add 1 because `pageNumber` is
   // zero indexed, but for human consuption, we want 1 indexed numbers.
-  return `${prefix !== "/" ? prefix : ""}/${pageNumber + 1}`;
+  return `${prefix !== "/" ? prefix : ""}/${pageNumber + 1}${trailingSlash ? "/" : ""}`;
   // NOTE: If `pathPrefix` is a single slash (the index page) then we do not
   // want to output two slashes, so we omit it.
 };

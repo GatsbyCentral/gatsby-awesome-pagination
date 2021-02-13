@@ -16,6 +16,21 @@ describe("paginate()", () => {
     });
     expect(createPage).toMatchSnapshot();
   });
+  
+  it("creates pages and forwards context (with trailingSlash)", () => {
+    const createPage = jest.fn();
+    paginate({
+      createPage,
+      items: Array(12).fill(),
+      itemsPerPage: 3,
+      itemsPerFirstPage: 5,
+      pathPrefix: "/blog",
+      component: "path/to/blog",
+      context: { additionalContext: true },
+      trailingSlash: true
+    });
+    expect(createPage).toMatchSnapshot();
+  });
 
   it("allows fine-tuning pathPrefix with a function", () => {
     const createPage = jest.fn();
