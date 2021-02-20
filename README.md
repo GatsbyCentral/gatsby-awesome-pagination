@@ -122,7 +122,7 @@ In addition to the arguments above, `paginate()` also supports:
 
 * `itemsPerPage`* - An integer, how many items should be displayed on each page
 * `itemsPerFirstPage` - An integer, how many items should be displayed on the **first** page
-* `pathPrefix`* - A string, the path like `/blog` (or string returning function), to which `/2`, `/3`, etc will be added
+* `pathPrefix`* - A string, the path like `/blog` (or string returning function), to which `/2`, `/3`, etc will be added. Cannot be an empty string.
 * `context` - A base context object which is extended with the pagination context values
 
 Example:
