@@ -1,6 +1,6 @@
 {
   "name": "gatsby-awesome-pagination",
-  "version": "0.3.6",
+  "version": "0.3.7",
   "description": "An opinionated, more awesome approach to pagination in Gatsby",
   "files": [
     "lib"
@@ -45,6 +45,6 @@
   },
   "peerDependencies": {
     "gatsby": "^3.0.0",
-    "react": "^16.0.0"
+    "react": "^17.0.0"
   }
 }
