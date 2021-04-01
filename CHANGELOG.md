@@ -8,6 +8,10 @@ The format is based on [Keep a Changelog][keep a changelog] and this project adh
 
 ---
 
+## [0.3.8] - 2021-04-01
+
+- Bump lodash to 4.17.21 for security fixes
+
 ## [0.3.7] - 2021-04-01
 
 ### Fixed
