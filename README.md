@@ -14,6 +14,10 @@ Please post questions on StackOverflow, only bug reports are accepted via GitHub
 
 ## Quick start
 
+```
+yarn add gatsby-awesome-pagination
+```
+
 Open `gatsby-node.js` and import:
 
 ```javascript
