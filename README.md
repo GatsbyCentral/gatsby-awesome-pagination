@@ -77,7 +77,7 @@ const BlogIndex = (props) => {
 }
 ```
 
-For a more detailed example, see [docs/examples.md](docs/examples.md)
+For a more detailed example, see [docs/examples.md](https://github.com/GatsbyCentral/gatsby-awesome-pagination/blob/master/docs/examples.md)
 
 ## Introduction
 
